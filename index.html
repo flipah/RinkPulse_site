@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en" data-theme="dark" data-hero="stencil">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RinkPulse - hockey shifts on your Garmin</title>
+<meta name="description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus an Android companion." />
+<meta property="og:title" content="RinkPulse - hockey shifts on your Garmin" />
+<meta property="og:description" content="A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and Android session history." />
+<meta property="og:image" content="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- =============== NAV =============== -->
+<header class="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark" aria-hidden="true"></span>
+    RINKPULSE
+  </a>
+  <nav class="nav-links">
+    <a href="#what">What it does</a>
+    <a href="#built-for">Built for</a>
+    <a href="#not-yet">Not yet</a>
+    <a href="#faq">FAQ</a>
+    <a href="#get">Get it</a>
+  </nav>
+</header>
+
+<!-- =============== HERO =============== -->
+<section class="hero" id="top">
+  <div class="hero-rink-lines" aria-hidden="true"></div>
+  <div class="hero-center-line" aria-hidden="true"></div>
+  <div class="hero-faceoff f1" aria-hidden="true"></div>
+  <div class="hero-faceoff f2" aria-hidden="true"></div>
+
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">Garmin Connect IQ / Android Companion</div>
+      <h1 class="hero-title">
+        Hockey<br />
+        <span class="stroke">tracking</span><br />
+        that <span class="accent">gets it.</span>
+      </h1>
+      <p class="hero-sub">
+        Your Garmin sees beer-league night and calls it <em>"workout."</em>
+        <strong>RinkPulse</strong> sees shifts, bench, ice time, work/rest, HR zones, and, if you're between the pipes, saves and goals against.
+        <br /><br />
+        No button-pressing every shift. Start the game. Play. Stop it after.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#get-watch">Download Garmin Watch App <span class="btn-arrow">-&gt;</span></a>
+        <a class="btn" href="#get-android">Get Android Companion</a>
+        <a class="btn" href="mailto:rinkpulsesupport@gmail.com">Send Feedback</a>
+      </div>
+      <div class="hero-meta">
+        <span>Free</span>
+        <span>No Account</span>
+        <span>One Dev</span>
+      </div>
+    </div>
+
+    <!-- Scoreboard mock -->
+    <div class="scoreboard" aria-label="Sample game stats">
+      <div class="sb-row">
+        <div>
+          <div class="sb-label">Ice time</div>
+          <div class="sb-value accent">14:23<span class="sb-unit">/ 47:50</span></div>
+        </div>
+        <div class="sb-divider"></div>
+        <div>
+          <div class="sb-label">Shifts</div>
+          <div class="sb-value">17</div>
+        </div>
+      </div>
+      <div class="sb-row">
+        <div>
+          <div class="sb-label">Avg shift</div>
+          <div class="sb-value">0:51</div>
+        </div>
+        <div class="sb-divider"></div>
+        <div>
+          <div class="sb-label">Work / rest</div>
+          <div class="sb-value">1 : 2.3</div>
+        </div>
+      </div>
+
+      <div class="shift-chart" aria-label="Shift timeline">
+        <div class="shift-chart-label">
+          <span>Shift Timeline</span>
+          <span>P2 / 12:34</span>
+        </div>
+        <div class="shift-bars" aria-hidden="true">
+          <span class="shift-bar ice"></span>
+          <span class="shift-bar bench-low"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar ice-mid"></span>
+          <span class="shift-bar bench-low"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar ice"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar bench-low"></span>
+          <span class="shift-bar ice-mid"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar ice"></span>
+          <span class="shift-bar bench-low"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar ice-mid"></span>
+          <span class="shift-bar ice"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar bench-low"></span>
+          <span class="shift-bar ice"></span>
+          <span class="shift-bar bench"></span>
+          <span class="shift-bar ice-mid"></span>
+          <span class="shift-bar bench-low"></span>
+          <span class="shift-bar ice"></span>
+          <span class="shift-bar bench"></span>
+        </div>
+      </div>
+
+      <div class="hr-strip">
+        <div class="hr-label">HR</div>
+        <div class="hr-bar" aria-hidden="true">
+          <span class="z1"></span>
+          <span class="z2"></span>
+          <span class="z3"></span>
+          <span class="z4"></span>
+          <span class="z5"></span>
+        </div>
+        <div class="hr-bpm">168<small>BPM</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== WHAT IT DOES =============== -->
+<section class="section" id="what">
+  <div class="section-head">
+    <span class="section-num">01 / WHAT IT DOES</span>
+    <h2 class="section-title">The stats your watch should've been<br />giving you all along.</h2>
+  </div>
+
+  <div class="features">
+    <div class="feature highlight">
+      <div class="feature-num">01</div>
+      <h3 class="feature-title">Auto Shift Detection</h3>
+      <p class="feature-desc">Bench vs. ice, picked up from skating motion and short heart-rate context. No tapping after every shift.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-num">02</div>
+      <h3 class="feature-title">Shift Count + Avg</h3>
+      <p class="feature-desc">How many you took, how long they were, and whether the third period got ugly.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-num">03</div>
+      <h3 class="feature-title">Ice Time / Bench Time</h3>
+      <p class="feature-desc">Real numbers, not just active duration. See how much of the game you actually played.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-num">04</div>
+      <h3 class="feature-title">Work / Rest Ratio</h3>
+      <p class="feature-desc">The single most useful number for not gassing yourself in the third.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-num">05</div>
+      <h3 class="feature-title">HR Zones</h3>
+      <p class="feature-desc">Time in each zone across the whole game and on a per-shift basis.</p>
+    </div>
+    <div class="feature highlight">
+      <div class="feature-num">06</div>
+      <h3 class="feature-title">Goalie Mode</h3>
+      <p class="feature-desc">Tap saves and goals against from the watch. Save % at the buzzer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =============== BUILT FOR =============== -->
+<section class="section" id="built-for">
+  <div class="section-head">
+    <span class="section-num">02 / BUILT FOR</span>
+    <h2 class="section-title">Made for people who actually play.</h2>
+  </div>
+
+  <div class="chips">
+    <span class="chip"><span class="chip-num">01</span> Beer League</span>
+    <span class="chip"><span class="chip-num">02</span> Pickup</span>
+    <span class="chip"><span class="chip-num">03</span> Practices</span>
+    <span class="chip"><span class="chip-num">04</span> Goalies</span>
+    <span class="chip"><span class="chip-num">05</span> Garmin Users</span>
+    <span class="chip"><span class="chip-num">06</span> Anyone Tired Of "Workout"</span>
+  </div>
+</section>
+
+<!-- =============== SAMPLE / SCREENS =============== -->
+<section class="section" id="screens">
+  <div class="section-head">
+    <span class="section-num">03 / IN THE WILD</span>
+    <h2 class="section-title">Watch on the wrist.<br />Phone in the bag.</h2>
+  </div>
+
+  <div class="screens">
+    <div class="device device-watch">
+      <div class="device-label">GARMIN / WATCH</div>
+      <div class="device-frame">
+        <img src="assets/watch-screenshot.png" alt="RinkPulse Garmin watch shift screen" />
+      </div>
+      <div class="device-foot">
+        <span>In-game face</span>
+        <strong>P2 / SHIFT 9</strong>
+      </div>
+    </div>
+
+    <div class="device device-phone">
+      <div class="device-label">ANDROID / COMPANION</div>
+      <div class="device-frame">
+        <img src="assets/phone-screenshot.png" alt="RinkPulse Android Companion home screen" />
+      </div>
+      <div class="device-foot">
+        <span>Session history</span>
+        <strong>+ 23 GAMES</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== NOT YET =============== -->
+<section class="section" id="not-yet">
+  <div class="section-head">
+    <span class="section-num">04 / NOT YET</span>
+    <h2 class="section-title">Things it doesn't do<br />(being honest).</h2>
+  </div>
+
+  <div class="not-yet">
+    <ul class="not-yet-list">
+      <li>iPhone</li>
+      <li>Apple Watch</li>
+      <li>Team / line stats</li>
+      <li>Garmin cloud history import</li>
+      <li>Premium you can buy today</li>
+      <li>Cloud sync across devices</li>
+    </ul>
+    <div class="not-yet-aside">
+      It's a side project. I ship between shifts. One dev, one rink bag.
+    </div>
+  </div>
+</section>
+
+<!-- =============== FAQ =============== -->
+<section class="section" id="faq">
+  <div class="section-head">
+    <span class="section-num">05 / QUESTIONS</span>
+    <h2 class="section-title">Frequently asked,<br />honestly answered.</h2>
+  </div>
+
+  <div class="faq">
+    <details open>
+      <summary>Which Garmin watches work?</summary>
+      <div class="faq-body">A wide set of Forerunner, fenix, Instinct, Venu, vivoactive, epix, Enduro, MARQ, D2, Descent, and Approach watches that support Connect IQ watch apps. If your watch can install third-party Connect IQ apps, it may be supported.</div>
+    </details>
+    <details>
+      <summary>How does it know I'm on the bench?</summary>
+      <div class="faq-body">Motion, speed/distance evidence when available, and short heart-rate context. It is not perfect, especially on weird bench changes or short shifts, but the goal is no button pressing every shift.</div>
+    </details>
+    <details>
+      <summary>Do I need the Android app?</summary>
+      <div class="faq-body">No. The watch works standalone and shows you your stats post-game. The Android app is for keeping a session history and looking at HR/shift charts on a bigger screen.</div>
+    </details>
+    <details>
+      <summary>iPhone? Apple Watch?</summary>
+      <div class="faq-body">Not yet. Possibly. No promise on timing. It's a side project.</div>
+    </details>
+    <details>
+      <summary>How much?</summary>
+      <div class="faq-body">Free right now. No ads. No account. Premium purchase is not live.</div>
+    </details>
+    <details>
+      <summary>Can I send feedback?</summary>
+      <div class="faq-body">Please. <a href="mailto:rinkpulsesupport@gmail.com">rinkpulsesupport@gmail.com</a>. Bug reports with watch model, phone model, and what happened are gold.</div>
+    </details>
+  </div>
+</section>
+
+<!-- =============== FOOTER =============== -->
+<footer class="footer" id="get">
+  <div class="footer-wrap">
+    <div>
+      <div class="footer-brand">RINK<span class="accent">PULSE</span>.</div>
+      <div class="footer-tag">A hockey app for Garmin watches that actually cares about shifts.</div>
+      <div class="hero-ctas" style="margin-top:24px;">
+        <a id="get-watch" class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Garmin Watch App <span class="btn-arrow">-&gt;</span></a>
+        <a id="get-android" class="btn" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Android%20Companion">Android Companion</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>The App</h4>
+      <ul>
+        <li><a href="#what">What it does</a></li>
+        <li><a href="#not-yet">What it doesn't</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <ul>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+        <li><a href="mailto:rinkpulsesupport@gmail.com">Send Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-base">
+    <span>(c) 2026 RinkPulse - Built between shifts</span>
+    <span>rinkpulsehockey.com</span>
+  </div>
+</footer>
+
+</body>
+</html>
