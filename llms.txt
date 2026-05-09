@@ -1,0 +1,23 @@
+# RinkPulse
+
+> RinkPulse is a Garmin Connect IQ watch app for hockey tracking, with an Android companion for session history and bigger-screen review.
+
+## Core Pages
+
+- [Home](https://rinkpulsehockey.com/): overview of RinkPulse, tracked hockey metrics, supported workflows, Garmin download link, Android beta signup, and FAQ.
+- [Support](https://rinkpulsehockey.com/support.html): help for installing the Garmin watch app, shift detection questions, Android beta access, bug reports, and feature requests.
+- [Privacy Policy](https://rinkpulsehockey.com/privacy-policy.html): explains local Android storage, Garmin watch-session import data, feedback emails, and what RinkPulse does not collect.
+
+## App Links
+
+- [Garmin Connect IQ listing](https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724): public RinkPulse Garmin watch app listing.
+
+## Product Facts
+
+- RinkPulse tracks hockey sessions on Garmin watches.
+- Metrics include shifts, ice time, bench time, work/rest, heart-rate zones, and goalie stats.
+- The watch app works standalone for post-game stats.
+- The Android companion is for local session history and chart review.
+- RinkPulse does not currently require an account.
+- RinkPulse does not currently provide an iPhone app, Apple Watch app, cloud account, or Garmin account history import.
+- Public support email is currently rinkpulsesupport@gmail.com.
