@@ -630,6 +630,47 @@ body::before {
   max-width: 760px;
 }
 
+/* ----------------- BETA ----------------- */
+.beta-section {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(232, 53, 42, 0.08), rgba(255,255,255,0));
+}
+.beta-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: start;
+}
+@media (max-width: 760px) {
+  .beta-grid { grid-template-columns: 1fr; gap: 24px; }
+}
+.beta-copy {
+  max-width: 760px;
+  color: var(--ink-dim);
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+.beta-checklist {
+  border-left: 2px solid var(--accent);
+  padding-left: 22px;
+}
+.beta-checklist-title {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.beta-checklist ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink-dim);
+  line-height: 1.8;
+}
+
 /* ----------------- FOOTER ----------------- */
 .footer {
   border-top: 1px solid var(--line);
