@@ -777,6 +777,18 @@ body::before {
 }
 .doc a { color: var(--accent); }
 .doc a:hover { text-decoration: underline; }
+.doc-action {
+  display: inline-flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 
 /* ----------------- HERO VARIANTS ----------------- */
 [data-hero="stencil"] .hero-title { font-family: "Oswald", var(--display); font-weight: 700; letter-spacing: 0.02em; }
