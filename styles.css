@@ -652,6 +652,15 @@ body::before {
   line-height: 1.6;
   margin: 0 0 24px;
 }
+.beta-email-fallback {
+  color: var(--ink-mute);
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+.beta-email-fallback a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
 .beta-checklist {
   border-left: 2px solid var(--accent);
   padding-left: 22px;
@@ -788,6 +797,16 @@ body::before {
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.doc-copy-email {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line-2);
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 13px;
+  overflow-wrap: anywhere;
 }
 
 /* ----------------- HERO VARIANTS ----------------- */
