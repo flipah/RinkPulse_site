@@ -740,9 +740,14 @@ body::before {
 /* ----------------- DOC PAGES (privacy/support) ----------------- */
 .doc { font-family: var(--body); background: var(--bg); color: var(--ink); }
 .doc-wrap {
+  width: min(100%, 760px);
   max-width: 760px;
   margin: 0 auto;
   padding: 64px 24px 96px;
+}
+.guide-wrap {
+  width: min(100%, 880px);
+  max-width: 880px;
 }
 .doc-back {
   font-family: var(--mono);
@@ -775,7 +780,12 @@ body::before {
   font-size: 17px;
   margin: 24px 0 4px;
 }
-.doc p, .doc li { color: var(--ink-dim); }
+.doc p, .doc li {
+  color: var(--ink-dim);
+  overflow-wrap: break-word;
+}
+.doc ul, .doc ol { padding-left: 22px; }
+.doc li { margin: 7px 0; }
 .doc-meta {
   font-family: var(--mono);
   font-size: 12px;
@@ -807,6 +817,62 @@ body::before {
   font-family: var(--mono);
   font-size: 13px;
   overflow-wrap: anywhere;
+}
+.doc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.doc-nav a {
+  display: inline-flex;
+  padding: 8px 10px;
+  border: 1px solid var(--line-2);
+  color: var(--ink-dim);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.doc-nav a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 18px 0 24px;
+}
+.doc-grid section,
+.doc-callout {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 18px;
+}
+.doc-grid h3 {
+  margin-top: 0;
+  color: var(--ink);
+}
+.doc-callout {
+  margin: 22px 0;
+  color: var(--ink-dim);
+}
+.doc-callout strong {
+  display: block;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.doc-steps li::marker {
+  color: var(--accent);
+  font-family: var(--mono);
+}
+@media (max-width: 720px) {
+  .doc-grid { grid-template-columns: 1fr; }
+  .doc-nav a { width: 100%; justify-content: center; }
 }
 
 /* ----------------- HERO VARIANTS ----------------- */

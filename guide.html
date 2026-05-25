@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>User Guide - RinkPulse</title>
+<meta name="description" content="RinkPulse user guide for starting a Garmin hockey session, reading shifts, speed, distance, goalie stats, and syncing completed sessions to the Android companion app." />
+<link rel="canonical" href="https://rinkpulsehockey.com/guide.html" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="doc">
+  <main class="doc-wrap guide-wrap">
+    <a class="doc-back" href="index.html">&lt;- back to RinkPulse</a>
+    <h1>User Guide</h1>
+    <p class="doc-meta">Garmin watch app / Android companion / sync help</p>
+
+    <p>RinkPulse is two pieces: the Garmin watch app records the hockey session, and the Android companion stores imported sessions locally for history and bigger-screen review. Start the session on the watch first. The Android app cannot pull every old Garmin activity from your account.</p>
+
+    <nav class="doc-nav" aria-label="Guide sections">
+      <a href="#quick-start">Quick start</a>
+      <a href="#watch-pages">Watch pages</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#goalie">Goalie mode</a>
+      <a href="#sync">Android sync</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+    </nav>
+
+    <h2 id="quick-start">Quick start on the watch</h2>
+    <ol class="doc-steps">
+      <li>Open RinkPulse on your Garmin watch.</li>
+      <li>Pick the mode that matches the skate: Game, Practice, Pickup, Goalie, Open Skate, or Pond Hockey.</li>
+      <li>Check the setup screen. Skater modes use automatic shift detection. Goalie mode enables save and goal-against tracking.</li>
+      <li>Press START or SELECT to begin the workout.</li>
+      <li>Play normally. You do not need to press a button every shift.</li>
+      <li>When finished, press START/STOP, SELECT, BACK, or MENU depending on your watch layout, then choose End Workout.</li>
+      <li>Review the summary on the watch. If you use Android, open RinkPulse Companion to import the completed session.</li>
+    </ol>
+
+    <div class="doc-callout">
+      <strong>Only RinkPulse sessions import to the companion app.</strong>
+      A regular Garmin activity may still show in Garmin Connect, but it will not have RinkPulse shift data for the Android companion.
+    </div>
+
+    <h2 id="watch-pages">Watch controls and pages</h2>
+    <p>During a workout, the watch has multiple pages. If you only see elapsed time and heart rate, you are probably on the Live Stats page. Move to the other pages to see speed, distance, shifts, score, goalie stats, HR zones, and the post-game summary.</p>
+
+    <div class="doc-grid">
+      <section>
+        <h3>Button watches</h3>
+        <ul>
+          <li>DOWN: next page</li>
+          <li>UP: previous page</li>
+          <li>START/STOP or SELECT: end workout prompt during tracking</li>
+          <li>BACK, MENU, or long-press UP: alternate end workout path on supported watches</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Touch watches</h3>
+        <ul>
+          <li>Swipe down or left: next page</li>
+          <li>Swipe up: previous page</li>
+          <li>Right swipe is guarded during workouts so you do not end a session by accident</li>
+          <li>Use START/STOP, SELECT, BACK, or MENU to end the workout depending on your watch</li>
+        </ul>
+      </section>
+    </div>
+
+    <h3>Workout pages</h3>
+    <ul>
+      <li><strong>Live Stats:</strong> elapsed time, heart rate, on-ice or bench state, period, current shift timer, ice time, and calories.</li>
+      <li><strong>Speed &amp; Distance:</strong> max speed, average speed, and total distance.</li>
+      <li><strong>Shifts:</strong> shift count, average shift, longest shift, and work/rest ratio.</li>
+      <li><strong>Score or Goalie:</strong> skater scoring, team score, opponent score, or goalie save tracking.</li>
+      <li><strong>HR Zones:</strong> time spent in heart-rate zones and the RinkPulse VO2 estimate.</li>
+    </ul>
+
+    <h2 id="metrics">How the main metrics work</h2>
+    <h3>Shifts and ice time</h3>
+    <p>RinkPulse detects shifts automatically from skating motion, speed or distance evidence when available, and short heart-rate context. It waits for several seconds of strong skating before starting a shift, then keeps the shift alive through short glides and coast periods. It ends the shift after the watch stops seeing enough on-ice evidence.</p>
+
+    <h3>Speed and distance</h3>
+    <p>Outdoor or strong GPS sessions can use Garmin distance and speed evidence. Indoor rinks often have weak GPS, so RinkPulse can show estimated speed and distance from motion. Estimated values may be marked with a "~" on watch summaries. Garmin Connect may still show different GPS-based speed or distance.</p>
+
+    <h3>Heart rate, calories, and zones</h3>
+    <p>Heart rate depends on the watch sensor and fit. Cold rinks, loose straps, gloves, and wrist flexion can affect readings. Calories come from Garmin's activity recording. HR zones and VO2 are RinkPulse fitness estimates, not medical measurements.</p>
+
+    <h3>Work/rest ratio</h3>
+    <p>Work/rest compares time on ice to time on the bench. A lower number means more rest between shifts. A higher number means you spent more of the session working.</p>
+
+    <h2 id="goalie">Goalie mode</h2>
+    <p>Goalie mode is for tracking saves and goals against on the watch. Use the goalie page during the session to add saves and goals against. RinkPulse calculates shots faced and save percentage from what you enter.</p>
+
+    <div class="doc-callout">
+      <strong>Goalie stats depend on user input.</strong>
+      The watch cannot know every save automatically. If a save was not entered, it will not appear later in the summary.
+    </div>
+
+    <h2 id="sync">Syncing to the Android companion</h2>
+    <p>The Android companion stores imported RinkPulse sessions locally on your phone. This is not Garmin account cloud sync. The current import path sends completed RinkPulse watch-session summaries through Garmin Connect Mobile and the Connect IQ phone connection.</p>
+
+    <ol class="doc-steps">
+      <li>Finish and save the workout in the RinkPulse watch app.</li>
+      <li>Keep your watch near the phone.</li>
+      <li>Make sure Garmin Connect Mobile is installed, signed in, and showing the watch as connected.</li>
+      <li>Open RinkPulse Companion on Android.</li>
+      <li>On Home, look for the Garmin sync card. It should say it is listening for completed RinkPulse watch sessions.</li>
+      <li>If the session does not appear, tap Retry.</li>
+      <li>If Retry still does not pull it in, open RinkPulse on the watch to the main mode-select screen, then tap Retry again in the Android app.</li>
+    </ol>
+
+    <h3>What imports</h3>
+    <p>Imported sessions can include timing, mode, role, ice time, bench time, shifts, calories, distance, speed, heart-rate summary, HR zones, score stats, goalie stats, and estimated speed/distance flags when those fields are available.</p>
+
+    <h3>What does not import</h3>
+    <ul>
+      <li>Generic Garmin activities that were not recorded with RinkPulse.</li>
+      <li>Your full Garmin account history.</li>
+      <li>Cloud history from an old phone install.</li>
+      <li>Sessions older than the small pending backlog kept by the watch.</li>
+    </ul>
+
+    <h2 id="troubleshooting">If it is not syncing</h2>
+    <h3>Run this checklist</h3>
+    <ol class="doc-steps">
+      <li>Open Garmin Connect Mobile and confirm the watch is connected.</li>
+      <li>Open RinkPulse Companion and wait for the sync card to finish checking.</li>
+      <li>Tap Retry on the sync card.</li>
+      <li>Open RinkPulse on the watch and leave it on the first screen, then tap Retry again on Android.</li>
+      <li>Confirm the workout was ended and saved in the RinkPulse watch app.</li>
+      <li>Confirm the Garmin watch app and Android companion are both updated.</li>
+      <li>Restart Garmin Connect Mobile and RinkPulse Companion if the status still says Garmin Connect is unavailable.</li>
+    </ol>
+
+    <h3>Common status messages</h3>
+    <ul>
+      <li><strong>Garmin Connect is not available:</strong> install or open Garmin Connect Mobile, then relaunch RinkPulse Companion.</li>
+      <li><strong>No Garmin watches found:</strong> Garmin Connect Mobile does not yet know about a paired watch on this phone.</li>
+      <li><strong>Watch found, but not connected:</strong> bring the watch near the phone and wait for Garmin Connect Mobile to reconnect.</li>
+      <li><strong>Listening for completed RinkPulse watch sessions:</strong> the Android side is ready. Finish a RinkPulse watch session or tap Retry for a pending one.</li>
+      <li><strong>Imported RinkPulse session:</strong> the session was received and saved locally in the companion app.</li>
+    </ul>
+
+    <h3>Send a useful bug report</h3>
+    <p>If it still will not sync, email <a href="mailto:rinkpulsesupport@gmail.com">rinkpulsesupport@gmail.com</a> with your Garmin watch model, Android phone model, RinkPulse watch app version, Android companion version, the sync status text, and whether the session appears in Garmin Connect.</p>
+
+    <p><a class="doc-action" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Sync%20Help">Email sync help</a></p>
+  </main>
+</body>
+</html>
