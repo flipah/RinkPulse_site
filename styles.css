@@ -595,6 +595,39 @@ body::before {
 .device-foot strong { color: var(--ink); }
 
 /* ----------------- FAQ ----------------- */
+.faq-guide-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  border: 1px solid var(--line-2);
+  background: var(--panel);
+}
+.faq-guide-kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.faq-guide-link p {
+  color: var(--ink-dim);
+  margin: 0;
+  max-width: 740px;
+}
+@media (max-width: 760px) {
+  .faq-guide-link {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .faq-guide-link .btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
 .faq {
   border-top: 1px solid var(--line);
 }
