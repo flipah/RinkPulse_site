@@ -21,6 +21,8 @@
 - The Android companion is for local session history and chart review.
 - Android import works through completed RinkPulse watch-session summaries sent via Garmin Connect Mobile and the Connect IQ phone connection.
 - Android import is not Garmin account cloud sync and does not pull a user's full Garmin account history.
+- Users should update both the Garmin watch app and Android companion before troubleshooting sync or missing history. They should not uninstall or clear Android app storage before contacting support.
+- RinkPulse Companion can export a user-initiated support diagnostics report with app, phone, Garmin sync, watch-version, visible-history, backup-count, recent-session, and recent-event details.
 - Android beta testers should send their Google Play email, Garmin watch model, Android phone model, and what kind of skate they can test.
 - RinkPulse does not currently require an account.
 - RinkPulse does not currently provide an iPhone app, Apple Watch app, cloud account, or Garmin account history import.

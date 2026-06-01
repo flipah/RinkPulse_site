@@ -20,13 +20,13 @@
     <p>RinkPulse Companion is an Android app for reviewing hockey sessions, editing local records, and viewing personal analytics. It supports a manual, local-first session workflow and can receive completed RinkPulse watch sessions through Garmin Connect Mobile and Garmin's Connect IQ Mobile SDK.</p>
 
     <h2>Data stored on your phone</h2>
-    <p>The Android app stores data locally on your device. Session history is stored in an encrypted local database. Local data may include session timing, stats, notes, role or mode metadata, profile and preference data, entitlement state, and app settings.</p>
+    <p>The Android app stores data locally on your device. Session history is stored in an encrypted local database. The app may also keep an encrypted local no-backup session-history snapshot on the same device to help recover if the local session table opens empty. Local data may include session timing, stats, notes, role or mode metadata, profile and preference data, entitlement state, and app settings.</p>
 
     <h2>Garmin watch data</h2>
     <p>The Android app can receive completed RinkPulse watch-session summaries from the RinkPulse Garmin Connect IQ watch app. Imported summaries may include session timing, mode, role, ice time, bench time, shift summaries, calories, distance, speed, heart-rate summaries, score stats, goalie stats, estimated speed or distance flags, and a profile snapshot captured by the watch at session start.</p>
 
     <h2>Backup and device transfer</h2>
-    <p>Android cloud backup and device transfer exclude the local Room session database, DataStore settings, and encrypted database key material. Uninstalling, clearing app data, or moving to a new phone can remove local RinkPulse Companion history unless the same sessions are imported again from a RinkPulse watch backlog or added manually.</p>
+    <p>Android cloud backup and device transfer exclude the local Room session database, DataStore settings, encrypted database key material, and the local no-backup session-history snapshot. Uninstalling, clearing app data, or moving to a new phone can remove local RinkPulse Companion history unless the same sessions are imported again from a RinkPulse watch backlog or added manually.</p>
 
     <h2>Network access</h2>
     <p>The Android companion app does not currently require a RinkPulse account and does not transmit session, profile, or settings data to RinkPulse servers. The app uses Garmin's Connect IQ Mobile SDK to communicate with the paired RinkPulse watch app through Garmin Connect Mobile.</p>
@@ -36,8 +36,11 @@
       <li>I do not sell your data.</li>
       <li>I do not run ads in the app.</li>
       <li>I do not currently provide a RinkPulse cloud account or Garmin account history import.</li>
-      <li>I do not currently provide user-facing sharing or export features from the Android app.</li>
+      <li>I do not automatically upload diagnostics or session history to RinkPulse servers.</li>
     </ul>
+
+    <h2>Support diagnostics</h2>
+    <p>RinkPulse Companion may let you export a support diagnostics report from the app. This report is created only when you choose to share it. It can include app version, install source, phone model, Android version, Garmin sync status, watch-version status when available, visible session count, local backup count, recent session identifiers, and recent app events.</p>
 
     <h2>Feedback emails</h2>
     <p>If you email me feedback, I will have your email address and whatever you sent. I use it to reply and improve the app. I will not add you to a mailing list without asking.</p>

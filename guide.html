@@ -17,6 +17,7 @@
     <p>RinkPulse is two pieces: the Garmin watch app records the hockey session, and the Android companion stores imported sessions locally for history and bigger-screen review. Start the session on the watch first. The Android app cannot pull every old Garmin activity from your account.</p>
 
     <nav class="doc-nav" aria-label="Guide sections">
+      <a href="#update-first">Update first</a>
       <a href="#quick-start">Quick start</a>
       <a href="#watch-pages">Watch pages</a>
       <a href="#metrics">Metrics</a>
@@ -24,6 +25,22 @@
       <a href="#sync">Android sync</a>
       <a href="#troubleshooting">Troubleshooting</a>
     </nav>
+
+    <h2 id="update-first">Before your next skate: update both apps</h2>
+    <p>If you use the Android companion, update both pieces before your next RinkPulse session. The Android companion update adds local history protection and support diagnostics. The Garmin watch update adds the latest shift and heart-rate import fixes.</p>
+
+    <ol class="doc-steps">
+      <li>Update RinkPulse on your Garmin watch from the Connect IQ Store.</li>
+      <li>Update RinkPulse Companion on Android from Google Play or the current test link.</li>
+      <li>Open Garmin Connect Mobile and confirm your watch is connected.</li>
+      <li>Open RinkPulse Companion once after updating so it can check the watch connection and prepare the local history backup.</li>
+      <li>If your Android history is missing or sync is behaving oddly, do not uninstall the app, clear app storage, or switch install sources before contacting support.</li>
+    </ol>
+
+    <div class="doc-callout">
+      <strong>The local backup is not cloud sync.</strong>
+      It helps protect history on this phone after the updated Android app has opened and written a backup. It cannot recover sessions after uninstalling, clearing app data, or before the update has created a backup.
+    </div>
 
     <h2 id="quick-start">Quick start on the watch</h2>
     <ol class="doc-steps">
@@ -99,6 +116,7 @@
     <p>The Android companion stores imported RinkPulse sessions locally on your phone. This is not Garmin account cloud sync. The current import path sends completed RinkPulse watch-session summaries through Garmin Connect Mobile and the Connect IQ phone connection.</p>
 
     <ol class="doc-steps">
+      <li>Confirm the Garmin watch app and Android companion are both updated.</li>
       <li>Finish and save the workout in the RinkPulse watch app.</li>
       <li>Keep your watch near the phone.</li>
       <li>Make sure Garmin Connect Mobile is installed, signed in, and showing the watch as connected.</li>
@@ -122,12 +140,12 @@
     <h2 id="troubleshooting">If it is not syncing</h2>
     <h3>Run this checklist</h3>
     <ol class="doc-steps">
+      <li>Update RinkPulse on the watch and RinkPulse Companion on Android.</li>
       <li>Open Garmin Connect Mobile and confirm the watch is connected.</li>
       <li>Open RinkPulse Companion and wait for the sync card to finish checking.</li>
       <li>Tap Retry on the sync card.</li>
       <li>Open RinkPulse on the watch and leave it on the first screen, then tap Retry again on Android.</li>
       <li>Confirm the workout was ended and saved in the RinkPulse watch app.</li>
-      <li>Confirm the Garmin watch app and Android companion are both updated.</li>
       <li>Restart Garmin Connect Mobile and RinkPulse Companion if the status still says Garmin Connect is unavailable.</li>
     </ol>
 
@@ -137,11 +155,15 @@
       <li><strong>No Garmin watches found:</strong> Garmin Connect Mobile does not yet know about a paired watch on this phone.</li>
       <li><strong>Watch found, but not connected:</strong> bring the watch near the phone and wait for Garmin Connect Mobile to reconnect.</li>
       <li><strong>Listening for completed RinkPulse watch sessions:</strong> the Android side is ready. Finish a RinkPulse watch session or tap Retry for a pending one.</li>
+      <li><strong>RinkPulse watch app may be out of date:</strong> update the watch app from Connect IQ, then reopen Garmin Connect Mobile and RinkPulse Companion.</li>
       <li><strong>Imported RinkPulse session:</strong> the session was received and saved locally in the companion app.</li>
     </ul>
 
+    <h3>If Android history looks missing</h3>
+    <p>Do not uninstall RinkPulse Companion, clear app storage, or switch between Play/internal-test installs while troubleshooting. Open the Android app, go to Profile, then Data &amp; Sync, and use Export support diagnostics if the button is available.</p>
+
     <h3>Send a useful bug report</h3>
-    <p>If it still will not sync, email <a href="mailto:rinkpulsesupport@gmail.com">rinkpulsesupport@gmail.com</a> with your Garmin watch model, Android phone model, RinkPulse watch app version, Android companion version, the sync status text, and whether the session appears in Garmin Connect.</p>
+    <p>If it still will not sync, email <a href="mailto:rinkpulsesupport@gmail.com">rinkpulsesupport@gmail.com</a> with your Garmin watch model, Android phone model, RinkPulse watch app version, Android companion version, the sync status text, whether the session appears in Garmin Connect, and the exported diagnostics report if you can get it from the Android app.</p>
 
     <p><a class="doc-action" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Sync%20Help">Email sync help</a></p>
   </main>
