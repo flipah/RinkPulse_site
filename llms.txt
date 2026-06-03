@@ -7,7 +7,8 @@
 - [Home](https://rinkpulsehockey.com/): overview of RinkPulse, tracked hockey metrics, supported workflows, Garmin download link, Android beta signup with required tester fields, and FAQ.
 - [Support](https://rinkpulsehockey.com/support.html): help for installing the Garmin watch app, shift detection questions, Android beta access, bug reports, and feature requests.
 - [User Guide](https://rinkpulsehockey.com/guide.html): explains how to start a RinkPulse watch workout, navigate watch pages, read shifts, speed, distance, goalie stats, and sync completed RinkPulse sessions to Android.
-- [Privacy Policy](https://rinkpulsehockey.com/privacy-policy.html): explains local Android storage, Garmin watch-session import data, feedback emails, and what RinkPulse does not collect.
+- [Privacy Policy](https://rinkpulsehockey.com/privacy-policy.html): explains local Android storage, optional cloud saves, Garmin watch-session import data, feedback emails, and what RinkPulse does not collect.
+- [Data Deletion](https://rinkpulsehockey.com/data-deletion.html): explains how to delete RinkPulse cloud account data in the Android app or request deletion by email.
 
 ## App Links
 
@@ -19,11 +20,12 @@
 - Metrics include shifts, ice time, bench time, work/rest, heart-rate zones, and goalie stats.
 - The watch app works standalone for post-game stats.
 - The Android companion is for local session history and chart review.
+- RinkPulse Companion can optionally sync session history after sign-in.
 - Android import works through completed RinkPulse watch-session summaries sent via Garmin Connect Mobile and the Connect IQ phone connection.
 - Android import is not Garmin account cloud sync and does not pull a user's full Garmin account history.
 - Users should update both the Garmin watch app and Android companion before troubleshooting sync or missing history. They should not uninstall or clear Android app storage before contacting support.
 - RinkPulse Companion can export a user-initiated support diagnostics report with app, phone, Garmin sync, watch-version, visible-history, backup-count, recent-session, and recent-event details.
 - Android beta testers should send their Google Play email, Garmin watch model, Android phone model, and what kind of skate they can test.
-- RinkPulse does not currently require an account.
-- RinkPulse does not currently provide an iPhone app, Apple Watch app, cloud account, or Garmin account history import.
+- The Garmin watch app and local Android history do not require an account. Optional Android cloud saves use a RinkPulse Companion sign-in.
+- RinkPulse does not currently provide an iPhone app, Apple Watch app, or Garmin account history import.
 - Public support email is currently rinkpulsesupport@gmail.com.
