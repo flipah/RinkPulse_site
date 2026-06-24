@@ -22,12 +22,13 @@
       <a href="#watch-pages">Watch pages</a>
       <a href="#metrics">Metrics</a>
       <a href="#goalie">Goalie mode</a>
+      <a href="#score-edits">Score edits</a>
       <a href="#sync">Android sync</a>
       <a href="#troubleshooting">Troubleshooting</a>
     </nav>
 
     <h2 id="update-first">Before your next skate: update both apps</h2>
-    <p>If you use the Android companion, update both pieces before your next RinkPulse session. The Android companion update adds local history protection, support diagnostics, and optional RinkPulse cloud saves after sign-in. The Garmin watch update adds the latest shift and heart-rate import fixes.</p>
+    <p>If you use the Android companion, update both pieces before your next RinkPulse session. The Android companion update adds local history protection, support diagnostics, optional RinkPulse cloud saves after sign-in, and expanded shift-detection diagnostics after import. The Garmin watch update adds the latest shift and heart-rate import fixes, including the <code>hockey-v4</code> shift detector.</p>
 
     <ol class="doc-steps">
       <li>Update RinkPulse on your Garmin watch from the Connect IQ Store.</li>
@@ -59,7 +60,7 @@
     </div>
 
     <h2 id="watch-pages">Watch controls and pages</h2>
-    <p>During a workout, the watch has multiple pages. If you only see elapsed time and heart rate, you are probably on the Live Stats page. Move to the other pages to see speed, distance, shifts, score, goalie stats, HR zones, and the post-game summary.</p>
+    <p>During a workout, the watch has multiple pages. If you only see elapsed time and heart rate, you are probably on the Live Stats page. Move to the other pages to see speed, distance, shifts, goalie stats, HR zones, and the post-game summary.</p>
 
     <div class="doc-grid">
       <section>
@@ -84,16 +85,16 @@
 
     <h3>Workout pages</h3>
     <ul>
-      <li><strong>Live Stats:</strong> elapsed time, heart rate, on-ice or bench state, period, current shift timer, ice time, and calories.</li>
+      <li><strong>Live Stats:</strong> elapsed time, heart rate, on-ice or bench state, current shift timer, ice time, and calories.</li>
       <li><strong>Speed &amp; Distance:</strong> max speed, average speed, and total distance.</li>
       <li><strong>Shifts:</strong> shift count, average shift, longest shift, and work/rest ratio.</li>
-      <li><strong>Score or Goalie:</strong> skater scoring, team score, opponent score, or goalie save tracking.</li>
+      <li><strong>Goalie Stats:</strong> save tracking, goals against, shots faced, and save percentage in goalie mode.</li>
       <li><strong>HR Zones:</strong> time spent in heart-rate zones and the RinkPulse VO2 estimate.</li>
     </ul>
 
     <h2 id="metrics">How the main metrics work</h2>
     <h3>Shifts and ice time</h3>
-    <p>RinkPulse detects shifts automatically from skating motion, speed or distance evidence when available, and short heart-rate context. It waits for several seconds of strong skating before starting a shift, then keeps the shift alive through short glides and coast periods. It ends the shift after the watch stops seeing enough on-ice evidence.</p>
+    <p>RinkPulse detects shifts automatically from skating motion, speed or distance evidence when available, short heart-rate context, and gyroscope-backed confidence on supported watches. It waits for several seconds of strong skating before starting a shift, then keeps the shift alive through short glides and coast periods. It ends the shift after the watch sees enough bench evidence and no keep-alive evidence.</p>
 
     <h3>Speed and distance</h3>
     <p>Outdoor or strong GPS sessions can use Garmin distance and speed evidence. Indoor rinks often have weak GPS, so RinkPulse can show estimated speed and distance from motion. Estimated values may be marked with a "~" on watch summaries. Garmin Connect may still show different GPS-based speed or distance.</p>
@@ -112,6 +113,11 @@
       The watch cannot know every save automatically. If a save was not entered, it will not appear later in the summary.
     </div>
 
+    <h2 id="score-edits">Score and stat edits</h2>
+    <p>Skater scorekeeping is handled in RinkPulse Companion, not on the watch during play. After a manual entry or Garmin import, open the session on Android and use Edit Stats to adjust goals, assists, plus/minus, team score, opponent score, or notes.</p>
+
+    <p>Keeping score edits on the phone makes the watch workout flow simpler while still letting you correct the stat line later. If the same RinkPulse watch session imports again, companion-edited skater stats are preserved.</p>
+
     <h2 id="sync">Syncing to the Android companion</h2>
     <p>The Android companion stores imported RinkPulse sessions locally on your phone and can optionally sync RinkPulse session history after sign-in. This is not Garmin account cloud sync. The current watch import path sends completed RinkPulse watch-session summaries through Garmin Connect Mobile and the Connect IQ phone connection.</p>
 
@@ -128,7 +134,7 @@
     </ol>
 
     <h3>What imports</h3>
-    <p>Imported sessions can include timing, mode, role, ice time, bench time, shifts, calories, distance, speed, heart-rate summary, HR zones, score stats, goalie stats, and estimated speed/distance flags when those fields are available.</p>
+    <p>Imported sessions can include timing, mode, role, ice time, bench time, shifts, calories, distance, speed, heart-rate summary, HR zones, goalie stats, estimated speed/distance flags, and shift-detection diagnostics such as high-rate accel/gyro status and ice/bench confidence when those fields are available. Skater score stats are edited and stored in the Android companion.</p>
 
     <h3>What does not import</h3>
     <ul>

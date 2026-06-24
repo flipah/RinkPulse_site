@@ -20,10 +20,10 @@
     <p>RinkPulse Companion is an Android app for reviewing hockey sessions, editing local records, viewing personal analytics, and optionally syncing session history after sign-in. It supports a manual, local-first session workflow and can receive completed RinkPulse watch sessions through Garmin Connect Mobile and Garmin's Connect IQ Mobile SDK.</p>
 
     <h2>Data stored on your phone</h2>
-    <p>The Android app stores data locally on your device. Session history is stored in an encrypted local database. The app may also keep an encrypted local no-backup session-history snapshot on the same device to help recover if the local session table opens empty. Local data may include session timing, stats, notes, role or mode metadata, profile and preference data, entitlement state, and app settings.</p>
+    <p>The Android app stores data locally on your device. Session history is stored in an encrypted local database. The app may also keep an encrypted local no-backup session-history snapshot on the same device to help recover if the local session table opens empty. Local data may include session timing, stats, skater score/stat edits, notes, role or mode metadata, profile and preference data, entitlement state, and app settings.</p>
 
     <h2>Garmin watch data</h2>
-    <p>The Android app can receive completed RinkPulse watch-session summaries from the RinkPulse Garmin Connect IQ watch app. Imported summaries may include session timing, mode, role, ice time, bench time, shift summaries, calories, distance, speed, heart-rate summaries, score stats, goalie stats, estimated speed or distance flags, and a profile snapshot captured by the watch at session start.</p>
+    <p>The Android app can receive completed RinkPulse watch-session summaries from the RinkPulse Garmin Connect IQ watch app. Imported summaries may include session timing, mode, role, ice time, bench time, shift summaries, calories, distance, speed, heart-rate summaries, goalie stats, estimated speed or distance flags, shift-detection diagnostics such as high-rate sensor status and ice/bench confidence, and a profile snapshot captured by the watch at session start. Skater score/stat edits are entered and stored in the Android companion.</p>
 
     <h2>Backup and device transfer</h2>
     <p>Android system backup and device transfer exclude the local Room session database, DataStore settings, encrypted database key material, and the local no-backup session-history snapshot. If you do not sign in for RinkPulse cloud saves, uninstalling, clearing app data, or moving to a new phone can remove local RinkPulse Companion history unless the same sessions are imported again from a RinkPulse watch backlog or added manually.</p>
@@ -46,7 +46,7 @@
     <p>If you email me feedback, I will have your email address and whatever you sent. I use it to reply and improve the app. I will not add you to a mailing list without asking.</p>
 
     <h2>Data retention and deletion</h2>
-    <p>Local app data remains on-device until it is removed by the user through app actions, app uninstall, clearing app data, or moving to a new phone. Cloud session data remains until you delete it in the app, request deletion by email, or the service is retired.</p>
+    <p>Local app data remains on-device until it is removed by the user through app actions, app uninstall, clearing app data, or moving to a new phone. Deleting an individual session in the app requires confirmation and removes that local session; if cloud sync is enabled, the app queues that session delete for cloud history too. Cloud session data remains until you delete it in the app, request deletion by email, or the service is retired.</p>
     <p>To delete RinkPulse cloud account data, open RinkPulse Companion, go to Profile, then Data &amp; Sync, and use Delete account data. You can also use the public deletion instructions at <a href="data-deletion.html">rinkpulsehockey.com/data-deletion.html</a>.</p>
 
     <h2>Children</h2>
