@@ -13,7 +13,8 @@
 ## App Links
 
 - [Garmin Connect IQ listing](https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724): public RinkPulse Garmin watch app listing.
-- [Android open test](https://play.google.com/apps/testing/com.rinkpulse.companion): Google Play web opt-in link for RinkPulse Companion open testing.
+- [Android open test web opt-in](https://play.google.com/apps/testing/com.rinkpulse.companion): Google Play web opt-in link for RinkPulse Companion open testing.
+- [Android Play Store listing](https://play.google.com/store/apps/details?id=com.rinkpulse.companion): Android install/listing link for RinkPulse Companion after opt-in.
 
 ## Product Facts
 
@@ -32,6 +33,7 @@
 - Users should update both the Garmin watch app and Android companion before troubleshooting sync or missing history. They should not uninstall or clear Android app storage before contacting support.
 - RinkPulse Companion can export a user-initiated support diagnostics report with app, phone, Garmin sync, watch-version, visible-history, backup-count, recent-session, and recent-event details.
 - Android open-test users can opt in through Google Play without first emailing to be added as testers.
+- Recommended Android open-test flow: join on the web first, then install from the Play Store listing on Android with the same Google account.
 - Useful Android feedback should include Garmin watch model, Android phone model, what kind of skate was tested, and what broke or felt confusing.
 - The Garmin watch app and local Android history do not require an account. Optional Android cloud saves use a RinkPulse Companion sign-in.
 - RinkPulse does not currently provide an iPhone app, Apple Watch app, or Garmin account history import.
