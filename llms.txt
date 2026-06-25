@@ -13,7 +13,7 @@
 ## App Links
 
 - [Garmin Connect IQ listing](https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724): public RinkPulse Garmin watch app listing.
-- [Android open test](https://play.google.com/apps/testing/com.rinkpulse.companion): Google Play opt-in link for RinkPulse Companion open testing.
+- [Android open test](https://play.google.com/store/apps/details?id=com.rinkpulse.companion): Google Play opt-in link for RinkPulse Companion open testing.
 
 ## Product Facts
 
