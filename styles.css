@@ -685,6 +685,26 @@ body::before {
   line-height: 1.6;
   margin: 0 0 24px;
 }
+.beta-platforms {
+  display: grid;
+  gap: 18px;
+}
+.beta-card {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.035);
+  padding: 22px;
+}
+.beta-card h3 {
+  font-family: var(--display);
+  font-size: 26px;
+  letter-spacing: 0.01em;
+  margin: 0 0 10px;
+}
+.beta-card p {
+  color: var(--ink-dim);
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
 .beta-email-fallback {
   color: var(--ink-mute);
   font-size: 14px;

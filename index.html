@@ -4,10 +4,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>RinkPulse - hockey shifts on your Garmin</title>
-<meta name="description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus an Android companion." />
+<meta name="description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus iOS TestFlight and Android companion testing." />
 <link rel="canonical" href="https://rinkpulsehockey.com/" />
 <meta property="og:title" content="RinkPulse - hockey shifts on your Garmin" />
-<meta property="og:description" content="A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and Android session history." />
+<meta property="og:description" content="A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and iOS or Android session history." />
 <meta property="og:url" content="https://rinkpulsehockey.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="RinkPulse" />
@@ -15,7 +15,7 @@
 <meta property="og:image:alt" content="RinkPulse logo" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="RinkPulse - hockey shifts on your Garmin" />
-<meta name="twitter:description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus an Android companion." />
+<meta name="twitter:description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus iOS TestFlight and Android companion testing." />
 <meta name="twitter:image" content="https://rinkpulsehockey.com/assets/logo.png" />
 <meta name="twitter:image:alt" content="RinkPulse logo" />
 <script type="application/ld+json">
@@ -23,9 +23,9 @@
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "RinkPulse",
-  "operatingSystem": "Garmin Connect IQ, Android",
+  "operatingSystem": "Garmin Connect IQ, iOS, Android",
   "applicationCategory": "SportsApplication",
-  "description": "A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and Android session history.",
+  "description": "A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and iOS or Android session history.",
   "url": "https://rinkpulsehockey.com/",
   "image": "https://rinkpulsehockey.com/assets/logo.png",
   "offers": {
@@ -67,7 +67,7 @@
 
   <div class="hero-grid">
     <div>
-      <div class="hero-eyebrow">Garmin Connect IQ / Android Companion</div>
+      <div class="hero-eyebrow">Garmin Connect IQ / iOS + Android Companion</div>
       <h1 class="hero-title">
         Hockey<br />
         <span class="stroke">tracking</span><br />
@@ -82,6 +82,7 @@
       <div class="hero-ctas">
         <a class="btn btn-primary" href="#get-watch">Download Garmin Watch App <span class="btn-arrow">-&gt;</span></a>
         <a class="btn" href="guide.html">User Guide</a>
+        <a class="btn" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Invite">Request iOS TestFlight</a>
         <a class="btn" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join Android Open Test</a>
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install Android App</a>
         <a class="btn" href="mailto:rinkpulsesupport@gmail.com">Send Feedback</a>
@@ -244,9 +245,9 @@
     </div>
 
     <div class="device device-phone">
-      <div class="device-label">ANDROID / COMPANION</div>
+      <div class="device-label">PHONE / COMPANION</div>
       <div class="device-frame">
-        <img src="assets/phone-screenshot.png" alt="RinkPulse Android Companion home screen" />
+        <img src="assets/phone-screenshot.png" alt="RinkPulse Companion home screen" />
       </div>
       <div class="device-foot">
         <span>Session history</span>
@@ -265,15 +266,14 @@
 
   <div class="not-yet">
     <ul class="not-yet-list">
-      <li>iPhone</li>
       <li>Apple Watch</li>
       <li>Team / line stats</li>
       <li>Garmin cloud history import</li>
+      <li>Public iOS App Store release</li>
       <li>Premium you can buy today</li>
-      <li>iPhone companion app</li>
     </ul>
     <div class="not-yet-aside">
-      It's a side project. I ship between shifts. One dev, one rink bag.
+      iPhone companion testing is in TestFlight now. Apple Watch tracking is still not part of this build.
     </div>
   </div>
 </section>
@@ -281,28 +281,46 @@
 <!-- =============== FAQ =============== -->
 <section class="section beta-section" id="beta">
   <div class="section-head">
-    <span class="section-num">05 / ANDROID OPEN TEST</span>
+    <span class="section-num">05 / COMPANION TESTING</span>
     <h2 class="section-title">Looking for real hockey testers,<br />not random installs.</h2>
   </div>
 
   <div class="beta-grid">
     <div>
       <p class="beta-copy">
-        Best fit right now: you play hockey, wear a Garmin, use Android, and are willing to try one real skate and tell me what broke or felt confusing. Join the open test on the web first, then install from Google Play on your Android phone.
+        Best fit right now: you play hockey, wear a Garmin, use an iPhone or Android phone, and are willing to try one real skate. The watch still records the session; the phone companion is for history, edits, charts, optional cloud saves, and watch-session import.
       </p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join on the Web <span class="btn-arrow">-&gt;</span></a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install on Android</a>
+      <div class="beta-platforms">
+        <section class="beta-card">
+          <div class="beta-checklist-title">Apple TestFlight</div>
+          <h3>iPhone testers</h3>
+          <p>Use this if you have an iPhone and can test the iOS companion with manual entries or completed RinkPulse Garmin watch sessions.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Invite">Request TestFlight Invite <span class="btn-arrow">-&gt;</span></a>
+            <a class="btn" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Feedback">Send iOS Feedback</a>
+          </div>
+          <p class="beta-email-fallback">Include your Apple ID email if it is different, iPhone model, Garmin watch model, and what kind of skate you can test.</p>
+        </section>
+
+        <section class="beta-card">
+          <div class="beta-checklist-title">Android Open Test</div>
+          <h3>Android testers</h3>
+          <p>Join the Google Play open test on the web first, then install from Google Play on your Android phone using the same Google account.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join on the Web <span class="btn-arrow">-&gt;</span></a>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install on Android</a>
+          </div>
+          <p class="beta-email-fallback">Email <a href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Android%20Open%20Test%20Feedback">rinkpulsesupport@gmail.com</a> if Play says the test is unavailable or you hit something broken.</p>
+        </section>
       </div>
-      <p class="beta-email-fallback">Email <a href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Android%20Open%20Test%20Feedback">rinkpulsesupport@gmail.com</a> if Play says the test is unavailable or you hit something broken.</p>
     </div>
     <div class="beta-checklist" aria-label="Open test feedback details">
-      <div class="beta-checklist-title">Install steps</div>
+      <div class="beta-checklist-title">Feedback I need</div>
       <ul>
-        <li>Open Join on the Web and opt in with your Google account</li>
-        <li>Open Install on Android from the same Google account</li>
-        <li>Install or update RinkPulse Companion from Google Play</li>
-        <li>Send feedback with watch model, phone model, and what happened</li>
+        <li>Garmin watch model and phone model</li>
+        <li>Whether the session was imported or entered manually</li>
+        <li>What kind of skate you tested: game, pickup, practice, goalie</li>
+        <li>Anything confusing, broken, missing, or surprisingly useful</li>
       </ul>
     </div>
   </div>
@@ -317,7 +335,7 @@
   <div class="faq-guide-link">
     <div>
       <div class="faq-guide-kicker">Need the full walkthrough?</div>
-      <p>Use the guide for watch controls, speed and distance, shifts, goalie mode, Android sync, and what to try when a session will not import.</p>
+      <p>Use the guide for watch controls, speed and distance, shifts, goalie mode, phone sync, and what to try when a session will not import.</p>
     </div>
     <a class="btn btn-primary" href="guide.html">Open User Guide <span class="btn-arrow">-&gt;</span></a>
   </div>
@@ -336,24 +354,24 @@
       <div class="faq-body">Motion, speed/distance evidence when available, short heart-rate context, and gyroscope-backed confidence on supported watches. It is not perfect, especially on weird bench changes or short shifts, but the goal is no button pressing every shift.</div>
     </details>
     <details>
-      <summary>Do I need the Android app?</summary>
-      <div class="faq-body">No. The watch works standalone and shows you workout stats post-game. The Android app is for keeping session history, looking at HR/shift charts on a bigger screen, and editing score or personal stats after a manual entry or Garmin import. If you want to help test Android, join the Play open test and send feedback with your Garmin watch model, Android phone model, and what kind of skate you tried.</div>
+      <summary>Do I need the companion app?</summary>
+      <div class="faq-body">No. The watch works standalone and shows you workout stats post-game. The iOS and Android companion apps are for keeping session history, looking at HR/shift charts on a bigger screen, editing score or personal stats after a manual entry or Garmin import, and optionally syncing RinkPulse history after sign-in.</div>
     </details>
     <details>
       <summary>Can I track goals and score?</summary>
-      <div class="faq-body">Yes, but skater scorekeeping is handled in RinkPulse Companion after the session instead of on the watch during play. Open the session on Android and use Edit Stats for goals, assists, plus/minus, team score, opponent score, or notes. Goalie mode still supports save and goal-against entry from the watch.</div>
+      <div class="faq-body">Yes, but skater scorekeeping is handled in RinkPulse Companion after the session instead of on the watch during play. Open the session on iPhone or Android and use Edit Stats for goals, assists, plus/minus, team score, opponent score, or notes. Goalie mode still supports save and goal-against entry from the watch.</div>
     </details>
     <details>
       <summary>What should I update before my next skate?</summary>
-      <div class="faq-body">Update RinkPulse on your Garmin watch from Connect IQ and update RinkPulse Companion on Android from Google Play or the open test link. Open the Android app once after updating so it can check the watch connection and prepare its local history backup. If your Android history looks wrong, do not uninstall or clear app storage before contacting support.</div>
+      <div class="faq-body">Update RinkPulse on your Garmin watch from Connect IQ and update RinkPulse Companion on iPhone through TestFlight or on Android from Google Play. Open the companion app once after updating so it can check the watch connection and prepare local history.</div>
     </details>
     <details>
       <summary>iPhone? Apple Watch?</summary>
-      <div class="faq-body">Not yet. Possibly. No promise on timing. It's a side project.</div>
+      <div class="faq-body">The iPhone companion is in TestFlight for testers. The Apple Watch is not supported right now; the watch-tracking app is still Garmin-first.</div>
     </details>
     <details>
       <summary>How much?</summary>
-      <div class="faq-body">Free right now. No ads. The Garmin watch app and local Android history do not require an account. Optional Android cloud saves use a RinkPulse Companion sign-in. Premium purchase is not live.</div>
+      <div class="faq-body">Free right now. No ads. The Garmin watch app and local companion history do not require an account. Optional cloud saves use a RinkPulse Companion sign-in. Premium purchase is not live.</div>
     </details>
     <details>
       <summary>Can I send feedback?</summary>
@@ -370,6 +388,7 @@
       <div class="footer-tag">A hockey app for Garmin watches that actually cares about shifts.</div>
       <div class="hero-ctas" style="margin-top:24px;">
         <a id="get-watch" class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Garmin Watch App <span class="btn-arrow">-&gt;</span></a>
+        <a class="btn" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Invite">Request iOS TestFlight</a>
         <a id="get-android" class="btn" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join Android Open Test</a>
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install Android App</a>
       </div>
