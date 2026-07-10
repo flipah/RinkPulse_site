@@ -23,7 +23,7 @@
       <li>Tap Delete Cloud Account Data or Delete account data.</li>
       <li>Confirm the destructive deletion prompt.</li>
     </ol>
-    <p>This removes RinkPulse cloud session data for the signed-in account, deletes the app account used for cloud sync, clears local RinkPulse sessions and profile/settings data on that device, and signs you out.</p>
+    <p>This removes RinkPulse cloud session data for the signed-in account, deletes the app account used for cloud sync, removes that account's synced local copies, and signs you out. Local-only sessions that were never added to the cloud account remain on the device and can be deleted individually.</p>
 
     <h2>Request deletion by email</h2>
     <p>If you cannot open the app, email <a href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Data%20Deletion%20Request">rinkpulsesupport@gmail.com</a> with subject <strong>RinkPulse Data Deletion Request</strong>. Include the email address you used to sign in to RinkPulse Companion. I may need to reply to verify the request before deleting cloud account data.</p>
@@ -33,12 +33,13 @@
     <ul>
       <li>RinkPulse cloud session records tied to your RinkPulse Companion account.</li>
       <li>The RinkPulse app account used for cloud sync.</li>
-      <li>Local RinkPulse Companion sessions and profile/settings data on the device when you use the in-app deletion action.</li>
+      <li>Local synced session copies owned by that cloud account when you use the in-app deletion action.</li>
     </ul>
 
     <h2>What is not deleted</h2>
     <ul>
       <li>Garmin Connect activities, Garmin account history, or Garmin account data.</li>
+      <li>Local-only RinkPulse sessions that were never added to the deleted cloud account.</li>
       <li>Google Play purchase or install records controlled by Google.</li>
       <li>Emails you already sent to support, unless you ask for those to be removed too.</li>
       <li>Records I am required to keep for security, fraud prevention, legal compliance, or dispute handling.</li>
