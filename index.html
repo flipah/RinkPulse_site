@@ -3,31 +3,28 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>RinkPulse - hockey shifts on your Garmin</title>
-<meta name="description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus iOS TestFlight and Android companion testing." />
+<title>Garmin Hockey Tracker &amp; Automatic Shift Tracking | RinkPulse</title>
+<meta name="description" content="Track hockey shifts, ice time, bench time, work/rest, heart-rate zones, speed, distance, and goalie stats automatically on a compatible Garmin watch." />
 <link rel="canonical" href="https://rinkpulsehockey.com/" />
-<meta property="og:title" content="RinkPulse - hockey shifts on your Garmin" />
-<meta property="og:description" content="A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and iOS or Android session history." />
+<meta property="og:title" content="Track Every Shift. Touch Nothing. | RinkPulse" />
+<meta property="og:description" content="Automatic hockey shift tracking, ice time, work/rest, heart-rate zones, and goalie stats on your Garmin watch." />
 <meta property="og:url" content="https://rinkpulsehockey.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="RinkPulse" />
-<meta property="og:image" content="https://rinkpulsehockey.com/assets/logo.png" />
-<meta property="og:image:alt" content="RinkPulse logo" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="RinkPulse - hockey shifts on your Garmin" />
-<meta name="twitter:description" content="A Garmin watch app that actually tracks hockey: shifts, ice time, bench time, work/rest, HR zones, goalie stats. Plus iOS TestFlight and Android companion testing." />
-<meta name="twitter:image" content="https://rinkpulsehockey.com/assets/logo.png" />
-<meta name="twitter:image:alt" content="RinkPulse logo" />
+<meta name="twitter:title" content="Track Every Shift. Touch Nothing. | RinkPulse" />
+<meta name="twitter:description" content="Automatic hockey shift tracking, ice time, work/rest, heart-rate zones, and goalie stats on your Garmin watch." />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
   "name": "RinkPulse",
-  "operatingSystem": "Garmin Connect IQ, iOS, Android",
+  "operatingSystem": "Garmin Connect IQ",
   "applicationCategory": "SportsApplication",
-  "description": "A Garmin watch app that tracks hockey shifts, ice time, bench time, work/rest, HR zones, goalie stats, and iOS or Android session history.",
+  "description": "A Garmin watch app that automatically tracks hockey shifts, ice time, bench time, work/rest, heart-rate zones, speed, distance, and goalie stats.",
   "url": "https://rinkpulsehockey.com/",
   "image": "https://rinkpulsehockey.com/assets/logo.png",
+  "installUrl": "https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -35,10 +32,12 @@
   }
 }
 </script>
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Oswald:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Playfair+Display:ital,wght@1,900&amp;display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260818" />
 </head>
 <body>
 
@@ -49,13 +48,24 @@
     RINKPULSE
   </a>
   <nav class="nav-links">
-    <a href="#what">What it does</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="stats-lab.html">Stats Lab</a>
+    <a href="#screens">Real screens</a>
     <a href="guide.html">Guide</a>
-    <a href="#built-for">Built for</a>
-    <a href="#not-yet">Not yet</a>
     <a href="#faq">FAQ</a>
     <a href="#get">Get it</a>
   </nav>
+  <details class="mobile-nav">
+    <summary aria-label="Open navigation">Menu</summary>
+    <nav aria-label="Mobile navigation">
+      <a href="#how-it-works">How it works</a>
+      <a href="stats-lab.html">Stats Lab</a>
+      <a href="#screens">Real screens</a>
+      <a href="guide.html">User guide</a>
+      <a href="#faq">FAQ</a>
+      <a href="#get">Get it</a>
+    </nav>
+  </details>
 </header>
 
 <!-- =============== HERO =============== -->
@@ -67,30 +77,30 @@
 
   <div class="hero-grid">
     <div>
-      <div class="hero-eyebrow">Garmin Connect IQ / iOS + Android Companion</div>
+      <div class="hero-eyebrow">Garmin hockey tracker / iOS + Android companion</div>
       <h1 class="hero-title">
-        Hockey<br />
-        <span class="stroke">tracking</span><br />
-        that <span class="accent">gets it.</span>
+        Track every<br />
+        <span class="stroke">shift.</span><br />
+        <span class="accent hero-long">Touch nothing.</span>
       </h1>
       <p class="hero-sub">
-        Your Garmin sees beer-league night and calls it <em>"workout."</em>
-        <strong>RinkPulse</strong> sees shifts, bench, ice time, work/rest, HR zones, and, if you're between the pipes, saves and goals against.
+        Start <strong>RinkPulse</strong> once on your Garmin, play your game, and get automatic shifts, ice time, bench time, work/rest, heart-rate zones, speed, distance, and goalie stats afterward.
         <br /><br />
-        No button-pressing every shift. Start the game. Play. Stop it after.
+        The watch records the skate. The phone companion handles history, charts, edits, imports, and optional cloud saves.
       </p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="#get-watch">Download Garmin Watch App <span class="btn-arrow">-&gt;</span></a>
-        <a class="btn" href="guide.html">User Guide</a>
-        <a class="btn" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Invite">Request iOS TestFlight</a>
-        <a class="btn" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join Android Open Test</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install Android App</a>
-        <a class="btn" href="mailto:rinkpulsesupport@gmail.com">Send Feedback</a>
+        <a class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span class="btn-arrow">-&gt;</span></a>
+        <a class="btn" href="#how-it-works">See how it works</a>
+      </div>
+      <div class="platform-links" aria-label="Companion app options">
+        <span>Phone companion:</span>
+        <a href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Invite">iPhone TestFlight</a>
+        <a href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Android open test</a>
       </div>
       <div class="hero-meta">
         <span>Free</span>
-        <span>No Account</span>
-        <span>One Dev</span>
+        <span>No account required</span>
+        <span>Garmin-first</span>
       </div>
     </div>
 
@@ -167,10 +177,61 @@
   </div>
 </section>
 
+<!-- =============== HOW IT WORKS =============== -->
+<section class="section" id="how-it-works">
+  <div class="section-head">
+    <span class="section-num">01 / HOW IT WORKS</span>
+    <h2 class="section-title">One start. Zero shift buttons.</h2>
+  </div>
+
+  <div class="steps-grid">
+    <article class="step-card">
+      <div class="step-num">01</div>
+      <h3>Start on Garmin</h3>
+      <p>Pick Game, Practice, Pickup, Goalie, Open Skate, or Pond Hockey, then begin the workout once.</p>
+    </article>
+    <article class="step-card step-card-accent">
+      <div class="step-num">02</div>
+      <h3>Play your game</h3>
+      <p>RinkPulse looks for skating and bench evidence automatically. No gloves off and no tapping after every change.</p>
+    </article>
+    <article class="step-card">
+      <div class="step-num">03</div>
+      <h3>Review the night</h3>
+      <p>See the summary on your watch, then use the phone companion for history, charts, edits, and imports.</p>
+    </article>
+  </div>
+
+  <div class="trust-strip" aria-label="RinkPulse product principles">
+    <span><strong>Watch</strong> records the skate</span>
+    <span><strong>Phone</strong> handles review</span>
+    <span><strong>Local-first</strong> by default</span>
+  </div>
+</section>
+
+<!-- =============== STATS LAB =============== -->
+<section class="section stats-lab-teaser" id="stats-lab">
+  <div class="stats-lab-copy">
+    <span class="section-num">02 / HOCKEY STATS LAB</span>
+    <h2 class="section-title">How much ice time should you get?</h2>
+    <p>Estimate your expected ice time, shift count, bench recovery, and work/rest ratio from game length, number of lines, and average shift length.</p>
+    <a class="btn btn-primary" href="stats-lab.html">Try the free calculator <span class="btn-arrow">-&gt;</span></a>
+  </div>
+  <div class="lab-score" aria-label="Example ice-time estimate">
+    <div class="lab-score-label">3 lines / 60-minute game</div>
+    <div class="lab-score-value">20:00</div>
+    <div class="lab-score-caption">expected ice time</div>
+    <div class="lab-score-grid">
+      <span><strong>27</strong> shifts</span>
+      <span><strong>1:2</strong> work/rest</span>
+    </div>
+  </div>
+</section>
+
 <!-- =============== WHAT IT DOES =============== -->
 <section class="section" id="what">
   <div class="section-head">
-    <span class="section-num">01 / WHAT IT DOES</span>
+    <span class="section-num">03 / WHAT IT TRACKS</span>
     <h2 class="section-title">The stats your watch should've been<br />giving you all along.</h2>
   </div>
 
@@ -211,7 +272,7 @@
 <!-- =============== BUILT FOR =============== -->
 <section class="section" id="built-for">
   <div class="section-head">
-    <span class="section-num">02 / BUILT FOR</span>
+    <span class="section-num">04 / BUILT FOR</span>
     <h2 class="section-title">Made for people who actually play.</h2>
   </div>
 
@@ -228,7 +289,7 @@
 <!-- =============== SAMPLE / SCREENS =============== -->
 <section class="section" id="screens">
   <div class="section-head">
-    <span class="section-num">03 / IN THE WILD</span>
+    <span class="section-num">05 / REAL SCREENS</span>
     <h2 class="section-title">Watch on the wrist.<br />Phone in the bag.</h2>
   </div>
 
@@ -257,38 +318,17 @@
   </div>
 </section>
 
-<!-- =============== NOT YET =============== -->
-<section class="section" id="not-yet">
-  <div class="section-head">
-    <span class="section-num">04 / NOT YET</span>
-    <h2 class="section-title">Things it doesn't do<br />(being honest).</h2>
-  </div>
-
-  <div class="not-yet">
-    <ul class="not-yet-list">
-      <li>Apple Watch</li>
-      <li>Team / line stats</li>
-      <li>Garmin cloud history import</li>
-      <li>Public iOS App Store release</li>
-      <li>Premium you can buy today</li>
-    </ul>
-    <div class="not-yet-aside">
-      iPhone companion testing is in TestFlight now. Apple Watch tracking is still not part of this build.
-    </div>
-  </div>
-</section>
-
-<!-- =============== FAQ =============== -->
+<!-- =============== COMPANION TESTING =============== -->
 <section class="section beta-section" id="beta">
   <div class="section-head">
-    <span class="section-num">05 / COMPANION TESTING</span>
-    <h2 class="section-title">Looking for real hockey testers,<br />not random installs.</h2>
+    <span class="section-num">06 / COMPANION TESTING</span>
+    <h2 class="section-title">Help shape RinkPulse<br />during your next skate.</h2>
   </div>
 
   <div class="beta-grid">
     <div>
       <p class="beta-copy">
-        Best fit right now: you play hockey, wear a Garmin, use an iPhone or Android phone, and are willing to try one real skate. The watch still records the session; the phone companion is for history, edits, charts, optional cloud saves, and watch-session import.
+        If you play hockey with a Garmin and use an iPhone or Android phone, one real skate can make RinkPulse better. The watch records the session; the phone companion is for history, edits, charts, optional cloud saves, and watch-session import.
       </p>
       <div class="beta-platforms">
         <section class="beta-card">
@@ -328,7 +368,7 @@
 
 <section class="section" id="faq">
   <div class="section-head">
-    <span class="section-num">06 / QUESTIONS</span>
+    <span class="section-num">07 / QUESTIONS</span>
     <h2 class="section-title">Frequently asked,<br />honestly answered.</h2>
   </div>
 
@@ -370,6 +410,14 @@
       <div class="faq-body">The iPhone companion is in TestFlight for testers. The Apple Watch is not supported right now; the watch-tracking app is still Garmin-first.</div>
     </details>
     <details>
+      <summary>What does RinkPulse not support yet?</summary>
+      <div class="faq-body">RinkPulse does not currently provide Apple Watch tracking, team or line-wide stats, full Garmin account history import, or a public iOS App Store release. The iPhone companion is available through TestFlight, and the Android companion is available through an open Google Play test.</div>
+    </details>
+    <details>
+      <summary>How much ice time should I expect?</summary>
+      <div class="faq-body">It depends on game length, how many lines rotate, and how evenly the bench is managed. Use the free <a href="stats-lab.html">Hockey Shift &amp; Ice-Time Calculator</a> for a quick estimate of ice time, shift count, bench recovery, and work/rest ratio.</div>
+    </details>
+    <details>
       <summary>How much?</summary>
       <div class="faq-body">Free right now. No ads. The Garmin watch app and local companion history do not require an account. Optional cloud saves use a RinkPulse Companion sign-in. Premium purchase is not live.</div>
     </details>
@@ -396,9 +444,9 @@
     <div class="footer-col">
       <h4>The App</h4>
       <ul>
-        <li><a href="#what">What it does</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="stats-lab.html">Hockey Stats Lab</a></li>
         <li><a href="guide.html">User Guide</a></li>
-        <li><a href="#not-yet">What it doesn't</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </div>
@@ -418,6 +466,8 @@
     <span>rinkpulsehockey.com</span>
   </div>
 </footer>
+
+<a class="mobile-install-bar" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span aria-hidden="true">-&gt;</span></a>
 
 </body>
 </html>

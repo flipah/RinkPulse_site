@@ -7,6 +7,7 @@
 - [Home](https://rinkpulsehockey.com/): overview of RinkPulse, tracked hockey metrics, supported workflows, Garmin download link, iOS TestFlight request path, Android open-test link, and FAQ.
 - [Support](https://rinkpulsehockey.com/support.html): help for installing the Garmin watch app, joining iOS TestFlight, editing score/stats in the companion app, shift detection questions, Android open-test access, bug reports, and feature requests.
 - [User Guide](https://rinkpulsehockey.com/guide.html): explains how to start a RinkPulse watch workout, navigate watch pages, read shifts, speed, distance, goalie stats, edit score/stats in the companion app, and sync completed RinkPulse sessions to iOS or Android.
+- [Hockey Stats Lab](https://rinkpulsehockey.com/stats-lab.html): free calculator for estimating expected ice time, shift count, bench recovery, and work/rest ratio from game length, rotating lines, and average shift length.
 - [Privacy Policy](https://rinkpulsehockey.com/privacy-policy.html): explains local companion storage, optional cloud saves, Garmin watch-session import data, score/stat edits, feedback emails, and what RinkPulse does not collect.
 - [Data Deletion](https://rinkpulsehockey.com/data-deletion.html): explains how to delete RinkPulse cloud account data in the iOS or Android app or request deletion by email.
 
@@ -21,7 +22,7 @@
 
 - RinkPulse tracks hockey sessions on Garmin watches.
 - Metrics include shifts, ice time, bench time, work/rest, heart-rate zones, and goalie stats.
-- Automatic shift detection uses motion, speed/distance evidence when available, short heart-rate context, and gyroscope-backed ice/bench confidence on supported watches.
+- Current hockey-v5 automatic shift detection uses motion, speed/distance evidence when available, short heart-rate context, gentle-skating start evidence, and gyroscope-backed ice/bench confidence on supported watches.
 - The watch app works standalone for post-game stats.
 - The iOS and Android companion apps are for local session history, chart review, and skater score/stat edits.
 - Skater goals, assists, plus/minus, team score, opponent score, and notes are edited in RinkPulse Companion after manual entry or Garmin import, not on the watch during play.

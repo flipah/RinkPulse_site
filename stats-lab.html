@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Hockey Shift &amp; Ice-Time Calculator | RinkPulse Stats Lab</title>
+<meta name="description" content="Estimate hockey ice time, shift count, bench recovery, and work/rest ratio from game length, number of lines, and average shift length." />
+<link rel="canonical" href="https://rinkpulsehockey.com/stats-lab.html" />
+<meta property="og:title" content="Hockey Shift &amp; Ice-Time Calculator | RinkPulse" />
+<meta property="og:description" content="Estimate your ice time, shifts, bench recovery, and work/rest ratio for your next hockey game." />
+<meta property="og:url" content="https://rinkpulsehockey.com/stats-lab.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="RinkPulse" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Hockey Shift &amp; Ice-Time Calculator | RinkPulse" />
+<meta name="twitter:description" content="Estimate your ice time, shifts, bench recovery, and work/rest ratio for your next hockey game." />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Oswald:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260818" />
+<script src="stats-lab.js?v=20260818" defer></script>
+</head>
+<body class="lab-page">
+  <main class="lab-wrap">
+    <a class="doc-back" href="index.html">&lt;- back to RinkPulse</a>
+
+    <header class="lab-header">
+      <h1>Hockey shift &amp;<br /><span>ice-time calculator</span></h1>
+      <a class="btn" href="guide.html">Open user guide</a>
+    </header>
+
+    <p class="lab-intro">Get a quick equal-rotation estimate for your next game. Adjust the game length, number of forward lines, and average shift length to see expected ice time, shifts, rest, and work/rest ratio.</p>
+
+    <section class="calculator-shell" aria-labelledby="calculator-title">
+      <form class="calculator-form" id="ice-time-form">
+        <div class="calculator-kicker" id="calculator-title">Build your game</div>
+        <div class="field-grid">
+          <div class="field">
+            <label for="game-minutes">Game length</label>
+            <input id="game-minutes" name="game" type="number" min="15" max="180" step="1" value="60" inputmode="numeric" />
+            <span class="field-help">Minutes of playing time</span>
+          </div>
+          <div class="field">
+            <label for="line-count">Forward lines rotating</label>
+            <select id="line-count" name="lines">
+              <option value="2">2 lines</option>
+              <option value="3" selected>3 lines</option>
+              <option value="4">4 lines</option>
+              <option value="5">5 groups</option>
+              <option value="6">6 groups</option>
+            </select>
+            <span class="field-help">Assumes each line receives equal time</span>
+          </div>
+          <div class="field">
+            <label for="shift-seconds">Average shift length</label>
+            <input id="shift-seconds" name="shift" type="number" min="20" max="180" step="5" value="45" inputmode="numeric" />
+            <span class="field-help">Seconds per shift</span>
+          </div>
+        </div>
+      </form>
+
+      <div class="calculator-results" aria-live="polite">
+        <div class="calculator-kicker">Equal-rotation estimate</div>
+        <div class="result-primary">
+          <div class="result-label">Expected ice time</div>
+          <output class="result-value" id="result-ice-time">20:00</output>
+        </div>
+        <div class="result-grid">
+          <div class="result-card">
+            <div class="result-label">Estimated shifts</div>
+            <output><strong id="result-shifts">27</strong></output>
+          </div>
+          <div class="result-card">
+            <div class="result-label">Rest between shifts</div>
+            <output><strong id="result-rest">1:30</strong></output>
+          </div>
+          <div class="result-card">
+            <div class="result-label">Work / rest</div>
+            <output><strong id="result-ratio">1 : 2</strong></output>
+          </div>
+          <div class="result-card">
+            <div class="result-label">Share of game</div>
+            <output><strong id="result-share">33%</strong></output>
+          </div>
+        </div>
+        <p class="calculator-note">This is a planning estimate, not a promise. Penalties, special teams, uneven line use, stoppages, and position changes can move the real number.</p>
+        <div class="lab-actions">
+          <button class="btn btn-primary" id="copy-estimate" type="button">Copy estimate <span class="btn-arrow">-&gt;</span></button>
+          <a class="btn" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Track it on Garmin</a>
+        </div>
+        <div class="copy-status" id="copy-status" role="status"></div>
+      </div>
+    </section>
+
+    <section class="lab-explainer" aria-label="How the estimate works">
+      <article>
+        <h2>Ice time</h2>
+        <p>Total playing time divided evenly across the number of rotating lines.</p>
+      </article>
+      <article>
+        <h2>Shift count</h2>
+        <p>Estimated ice time divided by your average shift length, rounded to the nearest full shift.</p>
+      </article>
+      <article>
+        <h2>Work / rest</h2>
+        <p>With an equal rotation, one shift of work is followed by the other lines' shifts on the bench.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

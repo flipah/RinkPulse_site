@@ -5,6 +5,7 @@ This folder is the source of truth for the public RinkPulse website.
 Use this folder for site-only work:
 
 - homepage updates
+- hockey stats tools and search-focused landing pages
 - user guide updates
 - privacy policy updates
 - support page updates
@@ -24,6 +25,8 @@ Expected GitHub Pages layout:
 
 ```text
 index.html
+stats-lab.html
+stats-lab.js
 guide.html
 privacy-policy.html
 support.html
