@@ -4,7 +4,7 @@
 
 ## Core Pages
 
-- [Home](https://rinkpulsehockey.com/): overview of RinkPulse, tracked hockey metrics, supported workflows, Garmin download link, iOS TestFlight request path, Android open-test link, and FAQ.
+- [Home](https://rinkpulsehockey.com/): overview of RinkPulse, tracked hockey metrics, supported workflows, Garmin download link, iOS public TestFlight link, Android open-test link, and FAQ.
 - [Support](https://rinkpulsehockey.com/support.html): help for installing the Garmin watch app, joining iOS TestFlight, editing score/stats in the companion app, shift detection questions, Android open-test access, bug reports, and feature requests.
 - [User Guide](https://rinkpulsehockey.com/guide.html): explains how to start a RinkPulse watch workout, navigate watch pages, read shifts, speed, distance, goalie stats, edit score/stats in the companion app, and sync completed RinkPulse sessions to iOS or Android.
 - [Hockey Stats Lab](https://rinkpulsehockey.com/stats-lab.html): free calculator for estimating expected ice time, shift count, bench recovery, and work/rest ratio from game length, rotating lines, and average shift length.
@@ -14,7 +14,7 @@
 ## App Links
 
 - [Garmin Connect IQ listing](https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724): public RinkPulse Garmin watch app listing.
-- [iOS TestFlight invite request](mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Invite): email path for iPhone users to request a TestFlight invite.
+- [iOS public TestFlight beta](https://testflight.apple.com/join/7v8WSfyg): public link for iPhone users to join the RinkPulse Companion beta.
 - [Android open test web opt-in](https://play.google.com/apps/testing/com.rinkpulse.companion): Google Play web opt-in link for RinkPulse Companion open testing.
 - [Android Play Store listing](https://play.google.com/store/apps/details?id=com.rinkpulse.companion): Android install/listing link for RinkPulse Companion after opt-in.
 
@@ -34,7 +34,7 @@
 - Imported sessions can include read-only shift-detection diagnostics such as detector version, high-rate accel/gyro status, ice/bench confidence, merge/filter/cap counters, and HR-only expiry counts.
 - Users should update both the Garmin watch app and phone companion before troubleshooting sync or missing history. They should not uninstall or clear app storage before contacting support.
 - RinkPulse Companion can export a user-initiated support diagnostics report with app, phone, Garmin sync, watch-version, visible-history, backup-count, recent-session, and recent-event details.
-- iOS TestFlight users should request an invite by email and include Apple ID email if different, iPhone model, Garmin watch model, and what kind of skate they can test.
+- iOS TestFlight users can join through the public link without requesting an email invite. Open the link on iPhone and follow the steps to install TestFlight and RinkPulse Companion.
 - Android open-test users can opt in through Google Play without first emailing to be added as testers.
 - Recommended Android open-test flow: join on the web first, then install from the Play Store listing on Android with the same Google account.
 - Useful companion feedback should include Garmin watch model, phone model, what kind of skate was tested, and what broke or felt confusing.
