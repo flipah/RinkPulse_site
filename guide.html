@@ -143,7 +143,7 @@
       <li><strong>Button watches:</strong> hold DOWN for about a second. The watch buzzes twice and shows ON ICE or BENCH.</li>
       <li><strong>Any watch:</strong> open the End menu and choose MARK ON ICE or MARK BENCH.</li>
     </ul>
-    <p>The change takes effect at the moment you press. For the next 20 seconds the watch won't switch you back on its own. If you pressed by mistake, press again right away to undo it. Corrected shifts are marked as manual when they reach the companion app, so they can later help tune detection to how you skate.</p>
+    <p>The change takes effect at the moment you press. For the next 20 seconds the watch won't switch you back on its own. If you pressed by mistake, press again right away to undo it. Corrected shifts are marked as manual when they reach the companion app, where <a href="#auto-tune">Auto-tune</a> uses them to adjust detection to how you skate.</p>
 
     <h2 id="bench-recovery">Bench recovery and READY</h2>
     <p>When you come off the ice, the live page switches to a bench view: how long you've rested and how many beats per minute your heart rate has dropped since the end of the shift. READY appears once you've rested at least 30 seconds and your heart rate has dropped by about 25 bpm, or has come down near your resting range. If Bench ready buzz is on in the settings, the watch also gives one gentle buzz.</p>
@@ -224,7 +224,17 @@
 
     <h3>What imports</h3>
     <p>Imported sessions can include timing, mode, role, ice time, bench time, shifts, calories, distance, speed, heart-rate summary, HR zones, goalie stats, estimated speed/distance flags, and shift-detection diagnostics such as high-rate accel/gyro status and ice/bench confidence when those fields are available. Skater score stats are edited and stored in the companion app.</p>
-    <p>Watch app 1.2 also sends bench recovery, per-period ice time, intermissions, corrected-shift markers, and goalie period splits. The companion apps will show these in an upcoming update. Until then they appear on the watch summary.</p>
+    <p>Watch app 1.2 also sends bench recovery, shift start times, per-period ice time, intermissions, corrected-shift markers, strides, and goalie period splits. RinkPulse Companion 1.2 on iPhone and Android shows them for free:</p>
+    <ul>
+      <li><strong>Ice/bench timeline:</strong> every shift placed where it happened in the game, with period changes, intermissions, and the shifts you corrected by hand marked.</li>
+      <li><strong>Recovery:</strong> average and per-shift heart-rate recovery, and work/rest with intermissions left out.</li>
+      <li><strong>Periods:</strong> ice time per period, and saves and goals against per period for goalies.</li>
+      <li><strong>Trends:</strong> ice time, shifts, average shift, recovery, and work/rest over the last 4 weeks, 12 weeks, or the season.</li>
+    </ul>
+    <p>Older companion versions still import 1.2 games, but without these extra details, so update both apps.</p>
+
+    <h3 id="auto-tune">Shift detection auto-tune</h3>
+    <p>When you correct shifts on the watch, RinkPulse Companion learns from them. After at least three games with corrections, it can send the watch a small tuning update that makes shift starts or ends a little more or less sensitive for how you skate. It changes one step at a time, undoes a change that makes things worse, and you can turn Auto-tune off or reset to the defaults in the companion app's Profile. The tuning is worked out on your phone. The detailed correction data it uses stays on your phone and is never uploaded to RinkPulse cloud saves. Auto-tune doesn't apply to Instinct 2, 2S, 2X, Crossover, or Descent G1.</p>
 
     <h3>What does not import</h3>
     <ul>
