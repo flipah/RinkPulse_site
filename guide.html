@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>How to Track Hockey on a Garmin Watch | RinkPulse Guide</title>
-<meta name="description" content="Learn how to track hockey on a Garmin watch with RinkPulse: start a session, review automatic shifts, speed, distance, goalie stats, and sync to the phone companion." />
+<meta name="description" content="Learn how to track hockey on a Garmin watch with RinkPulse: start a session, fix a shift with one button, read bench recovery, log goalie saves, and sync to the phone companion." />
 <link rel="canonical" href="https://rinkpulsehockey.com/guide.html" />
 <meta property="og:title" content="How to Track Hockey on a Garmin Watch | RinkPulse" />
 <meta property="og:description" content="Start a RinkPulse session, review automatic hockey shifts and ice time, and import completed sessions to the phone companion." />
@@ -26,15 +26,41 @@
     <p>RinkPulse is two pieces: the Garmin watch app records the hockey session, and the iOS or Android companion stores imported sessions locally for history and bigger-screen review. Start the session on the watch first. The companion app cannot pull every old Garmin activity from your account.</p>
 
     <nav class="doc-nav" aria-label="Guide sections">
+      <a href="#whats-new">What's new</a>
       <a href="#update-first">Update first</a>
       <a href="#quick-start">Quick start</a>
       <a href="#watch-pages">Watch pages</a>
+      <a href="#correct-shift">Fix a shift</a>
+      <a href="#bench-recovery">Bench recovery</a>
       <a href="#metrics">Metrics</a>
       <a href="#goalie">Goalie mode</a>
       <a href="#score-edits">Score edits</a>
+      <a href="#settings">Watch settings</a>
+      <a href="#garmin-connect">Garmin Connect</a>
+      <a href="#if-it-crashes">If the app crashes</a>
       <a href="#sync">Phone sync</a>
       <a href="#troubleshooting">Troubleshooting</a>
     </nav>
+
+    <h2 id="whats-new">What's new in watch app 1.2</h2>
+    <p>These features appear after you update RinkPulse on your Garmin watch to version 1.2 or later.</p>
+    <ul>
+      <li><strong>Fix a shift with one button.</strong> Hold DOWN for about a second to flip between ON ICE and BENCH, or use MARK ON ICE / MARK BENCH in the End menu. See <a href="#correct-shift">Fix a shift</a>.</li>
+      <li><strong>Bench recovery and READY.</strong> On the bench, the live page shows how long you've rested and how far your heart rate has dropped, then READY when you've recovered. See <a href="#bench-recovery">Bench recovery</a>.</li>
+      <li><strong>Shift warning.</strong> A soft double tap 10 seconds before your shift target, before the regular shift-time buzz.</li>
+      <li><strong>Faster goalie entry.</strong> On the goalie page, UP adds a save and DOWN adds a goal against. BACK within 5 seconds undoes it. Stats are split by period.</li>
+      <li><strong>Intermissions and periods.</strong> A long stop on the bench is treated as an intermission, so it no longer drags down your work/rest ratio, and the period moves on automatically in Game mode.</li>
+      <li><strong>Shifts in Garmin Connect.</strong> Each shift is saved as a lap, with an On Ice chart and shift / ice-time (or save) totals. See <a href="#garmin-connect">Garmin Connect</a>.</li>
+      <li><strong>GPS outdoors.</strong> Pond Hockey and Open Skate can use GPS for speed and distance.</li>
+      <li><strong>Watch settings.</strong> Detection sensitivity and the new buzzes can be changed in the Connect IQ app. See <a href="#settings">Watch settings</a>.</li>
+      <li><strong>Crash recovery.</strong> A NOT RECORDING warning, and a "Resume last game?" prompt if the app closes mid-game. See <a href="#if-it-crashes">If the app crashes</a>.</li>
+      <li><strong>Glance.</strong> On newer watches, the RinkPulse glance shows your last game.</li>
+    </ul>
+
+    <div class="doc-callout">
+      <strong>Instinct 2, 2S, 2X, Crossover, and Descent G1 have less memory.</strong>
+      They get the one-button shift fix, the bench screen with READY, the shift warning, goalie buttons, laps, and the crash fixes. Sensitivity settings, intermission detection, stride-based speed, resume after a crash, outdoor GPS, and the glance are left out on these watches so the app stays stable.
+    </div>
 
     <h2 id="update-first">Before your next skate: update both apps</h2>
     <p>If you use the companion app, update both pieces before your next RinkPulse session. The companion app adds local history, support diagnostics, optional RinkPulse cloud saves after sign-in, and expanded shift-detection details after import. Current Garmin watch builds include the <code>hockey-v5</code> shift detector, improved gentle-skating start evidence, corrected indoor estimated-speed handling, and speed/distance units that follow the watch's Garmin settings.</p>
@@ -77,6 +103,7 @@
         <ul>
           <li>DOWN: next page</li>
           <li>UP: previous page</li>
+          <li>Hold DOWN (about 1 second): switch between ON ICE and BENCH (skaters)</li>
           <li>START/STOP or SELECT: end workout prompt during tracking</li>
           <li>BACK, MENU, or long-press UP: alternate end workout path on supported watches</li>
         </ul>
@@ -87,35 +114,66 @@
           <li>Swipe down or left: next page</li>
           <li>Swipe up: previous page</li>
           <li>Right swipe is guarded during workouts so you do not end a session by accident</li>
-          <li>Use START/STOP, SELECT, BACK, or MENU to end the workout depending on your watch</li>
+          <li>Taps are ignored during a workout so a wet sleeve or glove cannot end it</li>
+          <li>Use START/STOP, SELECT, BACK, or MENU to open the End menu depending on your watch</li>
+          <li>To fix a shift on a touch watch, open the End menu and choose MARK ON ICE or MARK BENCH</li>
         </ul>
       </section>
     </div>
 
+    <h3>The End menu</h3>
+    <p>Pressing START/STOP (or your watch's end button) opens a menu with three choices: <strong>CONTINUE</strong>, <strong>MARK ON ICE / MARK BENCH</strong> (skaters) or <strong>GOALIE STATS</strong> (goalies), and <strong>END WORKOUT</strong>. On touch watches, tap or swipe to pick an option, then press and hold to confirm it.</p>
+
     <h3>Workout pages</h3>
     <ul>
-      <li><strong>Live Stats:</strong> elapsed time, heart rate, on-ice or bench state, current shift timer, ice time, and calories.</li>
+      <li><strong>Live Stats:</strong> heart rate, ON ICE / BENCH / INTERMISSION, ice time, and calories. On the ice it shows your shift timer with the time left to your shift target (or how far over you are). On the bench it shows your rest time, how far your heart rate has dropped, and READY when you're recovered.</li>
       <li><strong>Speed &amp; Distance:</strong> max speed, average speed, and total distance.</li>
-      <li><strong>Shifts:</strong> shift count, average shift, longest shift, and work/rest ratio.</li>
-      <li><strong>Goalie Stats:</strong> save tracking, goals against, shots faced, and save percentage in goalie mode.</li>
-      <li><strong>HR Zones:</strong> time spent in heart-rate zones and the RinkPulse VO2 estimate.</li>
+      <li><strong>Shifts:</strong> shift count, average shift, last shift, and work/rest ratio.</li>
+      <li><strong>HR Zones:</strong> time spent in heart-rate zones and VO2.</li>
     </ul>
+    <p>Goalie mode has two pages: the Goalie page (heart rate, save %, saves, goals against, shots, period, and time) and HR Zones.</p>
+    <p>On Instinct watches, the small round window shows your heart rate during the game.</p>
+
+    <h3>After the game</h3>
+    <p>The summary pages show time, shifts, heart rate, recovery, and speed. To leave the summary, press SELECT or BACK twice. The first press shows "AGAIN TO EXIT" so a bump doesn't close it before you've read it.</p>
+
+    <h2 id="correct-shift">Fix a shift with one button</h2>
+    <p>Shifts are still detected automatically. When the watch gets it wrong, for example it missed the start of a shift or still thinks you're on the ice while you sit on the bench, correct it on the spot:</p>
+    <ul>
+      <li><strong>Button watches:</strong> hold DOWN for about a second. The watch buzzes twice and shows ON ICE or BENCH.</li>
+      <li><strong>Any watch:</strong> open the End menu and choose MARK ON ICE or MARK BENCH.</li>
+    </ul>
+    <p>The change takes effect at the moment you press. For the next 20 seconds the watch won't switch you back on its own. If you pressed by mistake, press again right away to undo it. Corrected shifts are marked as manual when they reach the companion app, so they can later help tune detection to how you skate.</p>
+
+    <h2 id="bench-recovery">Bench recovery and READY</h2>
+    <p>When you come off the ice, the live page switches to a bench view: how long you've rested and how many beats per minute your heart rate has dropped since the end of the shift. READY appears once you've rested at least 30 seconds and your heart rate has dropped by about 25 bpm, or has come down near your resting range. If Bench ready buzz is on in the settings, the watch also gives one gentle buzz.</p>
+    <p>READY is a guide, not a rule. Your coach and your line change come first. During an intermission the bench view switches to INTERMISSION and the buzz stays off.</p>
 
     <h2 id="metrics">How the main metrics work</h2>
     <h3>Shifts and ice time</h3>
-    <p>RinkPulse detects shifts automatically from skating motion, speed or distance evidence when available, short heart-rate context, and gyroscope-backed confidence on supported watches. It waits for several seconds of strong skating before starting a shift, then keeps the shift alive through short glides and coast periods. It ends the shift after the watch sees enough bench evidence and no keep-alive evidence.</p>
+    <p>RinkPulse detects shifts automatically from skating motion, speed or distance evidence when available, short heart-rate context, and gyroscope-backed confidence on supported watches. It waits for several seconds of strong skating before starting a shift, then keeps the shift alive through short glides and coast periods. It ends the shift after the watch sees enough bench evidence and no keep-alive evidence. If it gets a shift wrong, <a href="#correct-shift">fix it with one button</a>. If it regularly misses gentle skating or starts shifts from bench fidgeting, change Detection sensitivity in the <a href="#settings">watch settings</a>.</p>
 
     <h3>Speed and distance</h3>
-    <p>Outdoor or strong GPS sessions can use Garmin distance and speed evidence. Indoor rinks often have weak GPS, so RinkPulse can show estimated speed and distance from motion. Estimated values may be marked with a "~" on watch summaries. Garmin Connect may still show different GPS-based speed or distance.</p>
+    <p>Pond Hockey and Open Skate can turn on GPS (setting "Use GPS for Pond and Open Skate"), and good GPS is used for speed and distance outdoors. Indoor modes and goalie mode keep GPS off to save battery, because GPS is unreliable inside arenas. Indoors, RinkPulse estimates speed and distance from your skating stride: how often you stride, times a stride length that starts from your height in your Garmin profile and improves each time you skate outdoors with GPS. Estimated values are marked with a "~" on the watch. Garmin Connect may still show different GPS-based speed or distance.</p>
 
     <h3>Heart rate, calories, and zones</h3>
-    <p>Heart rate depends on the watch sensor and fit. Cold rinks, loose straps, gloves, and wrist flexion can affect readings. Calories come from Garmin's activity recording. HR zones and VO2 are RinkPulse fitness estimates, not medical measurements.</p>
+    <p>Heart rate depends on the watch sensor and fit. Cold rinks, loose straps, gloves, and wrist flexion can affect readings. Calories come from Garmin's activity recording. On most watches VO2 uses your watch's own Garmin VO2 max when the watch provides it, otherwise an estimate based on your age. HR zones, recovery, and VO2 are fitness guides, not medical measurements.</p>
 
     <h3>Work/rest ratio</h3>
-    <p>Work/rest compares time on ice to time on the bench. A lower number means more rest between shifts. A higher number means you spent more of the session working.</p>
+    <p>Work/rest compares time on ice to time on the bench. A lower number means more rest between shifts. A higher number means you spent more of the session working. On watches that detect intermissions, a long stop on the bench (about 8 minutes or more) counts as an intermission rather than rest, so the ratio reflects your actual shifts.</p>
+
+    <h3>Periods</h3>
+    <p>In Game mode, after an intermission the period moves on when your next shift starts. It won't move on before two shifts have been counted in the current period, so a long wait before puck drop doesn't skip a period. Turn this off with "Detect intermissions and periods" in the settings.</p>
 
     <h2 id="goalie">Goalie mode</h2>
-    <p>Goalie mode is for tracking saves and goals against on the watch. Use the goalie page during the session to add saves and goals against. RinkPulse calculates shots faced and save percentage from what you enter.</p>
+    <p>Goalie mode is for tracking saves and goals against on the watch. RinkPulse calculates shots faced and save percentage from what you enter, and splits them by period.</p>
+    <ul>
+      <li><strong>UP:</strong> add a save. You'll feel a short buzz and see "+1 SV".</li>
+      <li><strong>DOWN:</strong> add a goal against, with its own buzz and "+1 GA".</li>
+      <li><strong>BACK within 5 seconds:</strong> undo the last entry. After 5 seconds, BACK opens the End menu as usual.</li>
+      <li><strong>MENU or long-press UP:</strong> switch between the Goalie page and HR Zones.</li>
+      <li><strong>End menu, then GOALIE STATS:</strong> the full editor for corrections and changing the period. This is also how touch watches without UP/DOWN buttons enter stats.</li>
+    </ul>
 
     <div class="doc-callout">
       <strong>Goalie stats depend on user input.</strong>
@@ -126,6 +184,28 @@
     <p>Skater scorekeeping is handled in RinkPulse Companion, not on the watch during play. After a manual entry or Garmin import, open the session on iPhone or Android and use Edit Stats to adjust goals, assists, plus/minus, team score, opponent score, or notes.</p>
 
     <p>Keeping score edits on the phone makes the watch workout flow simpler while still letting you correct the stat line later. If the same RinkPulse watch session imports again, companion-edited skater stats are preserved.</p>
+
+    <h2 id="settings">Watch settings</h2>
+    <p>Open the Connect IQ app (or Garmin Connect, then Connect IQ Store, then My Device Apps), choose RinkPulse, then Settings.</p>
+    <ul>
+      <li><strong>Shift detection sensitivity:</strong> Low (fewer false shifts from bench fidgeting), Medium (default), or High (catches gentle skating).</li>
+      <li><strong>Buzz 10 s before shift target:</strong> the soft warning before your shift time is up.</li>
+      <li><strong>Buzz when recovered on bench:</strong> the gentle READY buzz.</li>
+      <li><strong>Detect intermissions and periods:</strong> intermission detection and automatic period changes in Game mode.</li>
+      <li><strong>Use GPS for Pond and Open Skate:</strong> outdoor GPS speed and distance.</li>
+    </ul>
+    <p>Sensitivity, intermissions, and outdoor GPS don't apply on Instinct 2, 2S, 2X, Crossover, or Descent G1.</p>
+
+    <h2 id="garmin-connect">Your game in Garmin Connect</h2>
+    <p>RinkPulse saves each workout to Garmin Connect as a hockey activity. From watch app 1.2, each shift start and end is saved as a lap, so the Laps tab works as a shift log with heart rate per shift. The activity also has an On Ice chart and, on most watches, totals for shifts, ice time, and average shift (or saves and goals against for goalies). Laps usually carry over to apps that sync from Garmin Connect, such as Strava. The Forerunner 55 records a plain hockey activity without laps or RinkPulse fields, to keep it stable.</p>
+
+    <h2 id="if-it-crashes">If the app crashes or stops recording</h2>
+    <ul>
+      <li><strong>NOT RECORDING:</strong> if this appears on the live page, Garmin isn't saving the workout. End the workout and start a new one.</li>
+      <li><strong>Resume last game?</strong> If RinkPulse closes mid-game, the next time you open it within a few hours it offers to resume. Choose Resume to continue with your totals so far. The resumed game is saved as a new Garmin activity that includes the earlier totals.</li>
+      <li><strong>SAFE:</strong> the first game after a crash runs in a safe mode that uses less sensor data. Detection may be a little less sensitive for that game only.</li>
+      <li>Then please email support with your watch model so we can find the cause.</li>
+    </ul>
 
     <h2 id="sync">Syncing to the phone companion</h2>
     <p>The iOS and Android companion apps store imported RinkPulse sessions locally on your phone and can optionally sync RinkPulse session history after sign-in. This is not Garmin account cloud sync. The current watch import path sends completed RinkPulse watch-session summaries through Garmin Connect Mobile and the Connect IQ phone connection.</p>
@@ -144,6 +224,7 @@
 
     <h3>What imports</h3>
     <p>Imported sessions can include timing, mode, role, ice time, bench time, shifts, calories, distance, speed, heart-rate summary, HR zones, goalie stats, estimated speed/distance flags, and shift-detection diagnostics such as high-rate accel/gyro status and ice/bench confidence when those fields are available. Skater score stats are edited and stored in the companion app.</p>
+    <p>Watch app 1.2 also sends bench recovery, per-period ice time, intermissions, corrected-shift markers, and goalie period splits. The companion apps will show these in an upcoming update. Until then they appear on the watch summary.</p>
 
     <h3>What does not import</h3>
     <ul>
