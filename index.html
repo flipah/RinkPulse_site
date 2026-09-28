@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="dark" data-hero="stencil">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -11,7 +11,13 @@
 <meta property="og:url" content="https://rinkpulsehockey.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="RinkPulse" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://rinkpulsehockey.com/assets/og-card.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="RinkPulse: automatic hockey shift tracking on your Garmin watch" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://rinkpulsehockey.com/assets/og-card.png" />
+<meta name="theme-color" content="#0c0d0f" />
 <meta name="twitter:title" content="Track Every Shift. Touch Nothing. | RinkPulse" />
 <meta name="twitter:description" content="Automatic hockey shift tracking, ice time, work/rest, heart-rate zones, and goalie stats on your Garmin watch." />
 <script type="application/ld+json">
@@ -36,8 +42,10 @@
 <link rel="apple-touch-icon" href="assets/logo.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Oswald:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Playfair+Display:ital,wght@1,900&amp;display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=20260818" />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Oswald:wght@500;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=20260928" />
+<script>document.documentElement.classList.add("js")</script>
+<script src="site.js?v=20260928" defer></script>
 </head>
 <body>
 
@@ -47,10 +55,10 @@
     <span class="brand-mark" aria-hidden="true"></span>
     RINKPULSE
   </a>
-  <nav class="nav-links">
+  <nav class="nav-links" aria-label="Main navigation">
     <a href="#how-it-works">How it works</a>
     <a href="stats-lab.html">Stats Lab</a>
-    <a href="#screens">Real screens</a>
+    <a href="compatible-watches.html">Watches</a>
     <a href="guide.html">Guide</a>
     <a href="#faq">FAQ</a>
     <a href="#get">Get it</a>
@@ -60,7 +68,7 @@
     <nav aria-label="Mobile navigation">
       <a href="#how-it-works">How it works</a>
       <a href="stats-lab.html">Stats Lab</a>
-      <a href="#screens">Real screens</a>
+      <a href="compatible-watches.html">Watches</a>
       <a href="guide.html">User guide</a>
       <a href="#faq">FAQ</a>
       <a href="#get">Get it</a>
@@ -85,11 +93,11 @@
       </h1>
       <p class="hero-sub">
         Start <strong>RinkPulse</strong> once on your Garmin, play your game, and get automatic shifts, ice time, bench time, work/rest, heart-rate zones, speed, distance, and goalie stats afterward.
-        <br /><br />
-        The watch records the skate. The phone companion handles history, charts, edits, imports, and optional cloud saves.
+        <span class="hero-sub-more"><br /><br />
+        The watch records the skate. The phone companion handles history, charts, edits, imports, and optional cloud saves.</span>
       </p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span class="btn-arrow">-&gt;</span></a>
+        <a id="hero-install" class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span class="btn-arrow" aria-hidden="true">→</span></a>
         <a class="btn" href="#how-it-works">See how it works</a>
       </div>
       <div class="platform-links" aria-label="Companion app options">
@@ -131,7 +139,7 @@
 
       <div class="shift-chart" aria-label="Shift timeline">
         <div class="shift-chart-label">
-          <span>Shift Timeline</span>
+          <span><span class="sb-live" aria-hidden="true"></span>Shift Timeline</span>
           <span>P2 / 12:34</span>
         </div>
         <div class="shift-bars" aria-hidden="true">
@@ -215,7 +223,7 @@
     <span class="section-num">02 / HOCKEY STATS LAB</span>
     <h2 class="section-title">How much ice time should you get?</h2>
     <p>Estimate your expected ice time, shift count, bench recovery, and work/rest ratio from game length, number of lines, and average shift length.</p>
-    <a class="btn btn-primary" href="stats-lab.html">Try the free calculator <span class="btn-arrow">-&gt;</span></a>
+    <a class="btn btn-primary" href="stats-lab.html">Try the free calculator <span class="btn-arrow" aria-hidden="true">→</span></a>
   </div>
   <div class="lab-score" aria-label="Example ice-time estimate">
     <div class="lab-score-label">3 lines / 60-minute game</div>
@@ -297,22 +305,22 @@
     <div class="device device-watch">
       <div class="device-label">GARMIN / WATCH</div>
       <div class="device-frame">
-        <img src="assets/watch-screenshot.png" alt="RinkPulse Garmin watch shift screen" />
+        <picture><source srcset="assets/watch-screenshot.webp" type="image/webp" /><img src="assets/watch-screenshot.png" width="480" height="480" loading="lazy" decoding="async" alt="RinkPulse Garmin watch Shifts page showing 8 shifts, on ice, average shift, longest shift and work/rest" /></picture>
       </div>
       <div class="device-foot">
         <span>In-game face</span>
-        <strong>P2 / SHIFT 9</strong>
+        <strong>P2 / SHIFT 8</strong>
       </div>
     </div>
 
     <div class="device device-phone">
       <div class="device-label">PHONE / COMPANION</div>
       <div class="device-frame">
-        <img src="assets/phone-screenshot.png" alt="RinkPulse Companion home screen" />
+        <picture><source srcset="assets/phone-screenshot.webp" type="image/webp" /><img src="assets/phone-screenshot.png" width="560" height="1250" loading="lazy" decoding="async" alt="RinkPulse Companion home screen with workload score and latest session" /></picture>
       </div>
       <div class="device-foot">
-        <span>Session history</span>
-        <strong>+ 23 GAMES</strong>
+        <span>Companion home</span>
+        <strong>WORKLOAD + HISTORY</strong>
       </div>
     </div>
   </div>
@@ -336,7 +344,7 @@
           <h3>iPhone testers</h3>
           <p>Use this if you have an iPhone and can test the iOS companion with manual entries or completed RinkPulse Garmin watch sessions.</p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="https://testflight.apple.com/join/7v8WSfyg" target="_blank" rel="noopener">Join TestFlight <span class="btn-arrow">-&gt;</span></a>
+            <a class="btn btn-primary" href="https://testflight.apple.com/join/7v8WSfyg" target="_blank" rel="noopener">Join TestFlight <span class="btn-arrow" aria-hidden="true">→</span></a>
             <a class="btn" href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20iOS%20TestFlight%20Feedback">Send iOS Feedback</a>
           </div>
           <p class="beta-email-fallback">Open the public link on your iPhone and follow the TestFlight steps to install RinkPulse Companion. No email invite needed.</p>
@@ -347,7 +355,7 @@
           <h3>Android testers</h3>
           <p>Join the Google Play open test on the web first, then install from Google Play on your Android phone using the same Google account.</p>
           <div class="hero-ctas">
-            <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join on the Web <span class="btn-arrow">-&gt;</span></a>
+            <a class="btn btn-primary" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join on the Web <span class="btn-arrow" aria-hidden="true">→</span></a>
             <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install on Android</a>
           </div>
           <p class="beta-email-fallback">Email <a href="mailto:rinkpulsesupport@gmail.com?subject=RinkPulse%20Android%20Open%20Test%20Feedback">rinkpulsesupport@gmail.com</a> if Play says the test is unavailable or you hit something broken.</p>
@@ -377,7 +385,7 @@
       <div class="faq-guide-kicker">Need the full walkthrough?</div>
       <p>Use the guide for watch controls, speed and distance, shifts, goalie mode, phone sync, and what to try when a session will not import.</p>
     </div>
-    <a class="btn btn-primary" href="guide.html">Open User Guide <span class="btn-arrow">-&gt;</span></a>
+    <a class="btn btn-primary" href="guide.html">Open User Guide <span class="btn-arrow" aria-hidden="true">→</span></a>
   </div>
 
   <div class="faq">
@@ -387,7 +395,7 @@
     </details>
     <details>
       <summary>Which Garmin watches work?</summary>
-      <div class="faq-body">A wide set of Forerunner, fenix, Instinct, Venu, vivoactive, epix, Enduro, MARQ, D2, Descent, and Approach watches that support Connect IQ watch apps. If your watch can install third-party Connect IQ apps, it may be supported.</div>
+      <div class="faq-body">A wide set of Forerunner, fenix, Instinct, Venu, vivoactive, epix, Enduro, MARQ, D2, Descent, and Approach watches that support Connect IQ watch apps. See the full <a href="compatible-watches.html">list of compatible Garmin watches</a> (84 models), or check your watch on the Connect IQ store page.</div>
     </details>
     <details>
       <summary>How does it know I'm on the bench?</summary>
@@ -434,18 +442,18 @@
     <div>
       <div class="footer-brand">RINK<span class="accent">PULSE</span>.</div>
       <div class="footer-tag">A hockey app for Garmin watches that actually cares about shifts.</div>
-      <div class="hero-ctas" style="margin-top:24px;">
-        <a id="get-watch" class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Garmin Watch App <span class="btn-arrow">-&gt;</span></a>
-        <a class="btn" href="https://testflight.apple.com/join/7v8WSfyg" target="_blank" rel="noopener">Join iOS TestFlight</a>
-        <a id="get-android" class="btn" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Join Android Open Test</a>
-        <a class="btn" href="https://play.google.com/store/apps/details?id=com.rinkpulse.companion" target="_blank" rel="noopener">Install Android App</a>
+      <div class="hero-ctas footer-ctas">
+        <a id="get-watch" class="btn btn-primary" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span class="btn-arrow" aria-hidden="true">→</span></a>
+        <a class="btn" href="#beta">Phone app</a>
       </div>
+      <div class="footer-platforms">Companion: <a href="https://testflight.apple.com/join/7v8WSfyg" target="_blank" rel="noopener">iPhone TestFlight</a> · <a id="get-android" href="https://play.google.com/apps/testing/com.rinkpulse.companion" target="_blank" rel="noopener">Android open test</a></div>
     </div>
     <div class="footer-col">
       <h4>The App</h4>
       <ul>
         <li><a href="#how-it-works">How it works</a></li>
         <li><a href="stats-lab.html">Hockey Stats Lab</a></li>
+        <li><a href="compatible-watches.html">Compatible Watches</a></li>
         <li><a href="guide.html">User Guide</a></li>
         <li><a href="#faq">FAQ</a></li>
       </ul>
@@ -462,12 +470,12 @@
     </div>
   </div>
   <div class="footer-base">
-    <span>(c) 2026 RinkPulse - Built between shifts</span>
+    <span>© 2026 RinkPulse · Built between shifts</span>
     <span>rinkpulsehockey.com</span>
   </div>
 </footer>
 
-<a class="mobile-install-bar" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span aria-hidden="true">-&gt;</span></a>
+<a class="mobile-install-bar" href="https://apps.garmin.com/en-US/apps/036b4e61-03af-4946-bc52-89ec13ca7724" target="_blank" rel="noopener">Install Free on Garmin <span aria-hidden="true">→</span></a>
 
 </body>
 </html>

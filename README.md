@@ -27,6 +27,8 @@ Expected GitHub Pages layout:
 index.html
 stats-lab.html
 stats-lab.js
+site.js
+compatible-watches.html
 guide.html
 privacy-policy.html
 support.html
