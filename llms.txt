@@ -6,7 +6,7 @@
 
 - [Home](https://rinkpulsehockey.com/): overview of RinkPulse, tracked hockey metrics, supported workflows, Garmin download link, iOS public TestFlight link, Android open-test link, and FAQ.
 - [Support](https://rinkpulsehockey.com/support.html): help for installing the Garmin watch app, joining iOS TestFlight, editing score/stats in the companion app, shift detection questions, Android open-test access, bug reports, and feature requests.
-- [User Guide](https://rinkpulsehockey.com/guide.html): explains how to start a RinkPulse watch workout, navigate watch pages, read shifts, speed, distance, goalie stats, edit score/stats in the companion app, and sync completed RinkPulse sessions to iOS or Android.
+- [User Guide](https://rinkpulsehockey.com/guide.html): explains how to start a RinkPulse watch workout, navigate watch pages, fix a detected shift, read bench recovery, shifts, speed, distance, goalie stats, change watch settings, edit score/stats in the companion app, and sync completed RinkPulse sessions to iOS or Android.
 - [Hockey Stats Lab](https://rinkpulsehockey.com/stats-lab.html): free calculator for estimating expected ice time, shift count, bench recovery, and work/rest ratio from game length, rotating lines, and average shift length.
 - [Privacy Policy](https://rinkpulsehockey.com/privacy-policy.html): explains local companion storage, optional cloud saves, Garmin watch-session import data, score/stat edits, feedback emails, and what RinkPulse does not collect.
 - [Data Deletion](https://rinkpulsehockey.com/data-deletion.html): explains how to delete RinkPulse cloud account data in the iOS or Android app or request deletion by email.
@@ -26,7 +26,11 @@
 - The watch app works standalone for post-game stats.
 - The iOS and Android companion apps are for local session history, chart review, and skater score/stat edits.
 - Skater goals, assists, plus/minus, team score, opponent score, and notes are edited in RinkPulse Companion after manual entry or Garmin import, not on the watch during play.
-- Goalie mode still supports save and goal-against entry from the watch.
+- Goalie mode still supports save and goal-against entry from the watch. From watch app 1.2, UP adds a save, DOWN adds a goal against, BACK within 5 seconds undoes, and goalie stats are split by period.
+- From watch app 1.2, skaters can correct a detected shift by holding DOWN for about a second or choosing MARK ON ICE / MARK BENCH in the End menu.
+- From watch app 1.2, the live page shows bench rest time, heart-rate drop since the shift, and a READY cue when recovered, plus an optional shift warning buzz 10 seconds before the shift target.
+- RinkPulse Companion 1.2 shows an ice/bench timeline, heart-rate recovery, per-period ice time, intermission-adjusted work/rest, goalie saves by period, and 4-week/12-week/season trends, all free. Its shift-detection Auto-tune (on by default) learns from shift corrections on the phone and sends small tuning updates to the watch; correction details stay on the phone and are not uploaded to cloud saves.
+- From watch app 1.2, each shift is saved as a lap in Garmin Connect with an On Ice chart; watch settings in the Connect IQ app control detection sensitivity, the shift warning, the bench-ready buzz, intermission/period detection, and outdoor GPS for Pond Hockey and Open Skate.
 - Deleting an individual companion session requires confirmation; if cloud sync is enabled, the app queues that session delete for cloud history too.
 - RinkPulse Companion can optionally sync session history after sign-in.
 - Phone import works through completed RinkPulse watch-session summaries sent via Garmin Connect Mobile and the Connect IQ phone connection.
